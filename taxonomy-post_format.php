@@ -16,7 +16,7 @@ if ( !defined('ABSPATH')) exit;
 ?>
 <?php get_header(); ?>
 		<div id="content" class="container" role="main">
-			<div id="main"<?php if (!dinky_get_theme_option('sidebar_display')): ?> class="full"<?php endif; ?>>
+			<div id="main"<?php if (!dinky_get_theme_option('sidebar_display')): ?> class="center <?php if (dinky_get_theme_option('fullmain_nosidebar')): ?> full<?php endif; ?>"<?php endif; ?>>
 				<?php get_sidebar('up_main'); ?>
 				<header class="page-header">
 					<h1 class="page-title"><?php printf( __( '%s Archives', 'dinky' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
