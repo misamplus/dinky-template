@@ -15,8 +15,7 @@
 
 /* font-face load from google by function.php */
 
-body,
-.en-US {
+*[lang=en-US] {
 	font-family: "Open Sans", sans-serif;
 }
 label {

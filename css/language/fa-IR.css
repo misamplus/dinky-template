@@ -35,72 +35,72 @@
 	font-style: normal;
 }
 
-.fa-IR {
+*[lang=fa-IR] {
 	font-family: "B Mitra", Tahoma, Arial;
 }
-.fa-IR label {
+body[lang=fa-IR] label {
 	font-size: 12pt;
 }
-.fa-IR input {
+body[lang=fa-IR] input {
 	font-family: Tahoma;
 }
-.fa-IR #main-navigation,
-.fa-IR #mobile-navigation {
+body[lang=fa-IR] #main-navigation,
+body[lang=fa-IR] #mobile-navigation {
 	font-family: "B Yekan";
 	font-size: 12pt;
 }
-.fa-IR .mobile-title {
+body[lang=fa-IR] .mobile-title {
 	font-size: 14pt;
 }
-.fa-IR #title .title {
+body[lang=fa-IR] #title .title {
 	font-family: "Entezar";
 	font-size: 60pt;
 	font-weight: 400;
 }
-.fa-IR #title .title:after {
+body[lang=fa-IR] #title .title:after {
 	font-family: "B Yekan";
 	font-size: 10pt;
 }
-.fa-IR #title .subtitle {
+body[lang=fa-IR] #title .subtitle {
 	font-family: "Entezar";
 	font-size: 20pt;
 	font-weight: 400;
 }
-.fa-IR #intro {
+body[lang=fa-IR] #intro {
 	padding: 35px 10px 30px;
 	min-height: 85px;
 	font-size: 16pt;
 }
-.fa-IR #main .page-title {
+body[lang=fa-IR] #main .page-title {
 	font-family: "B Yekan";
 	font-size: 16pt;
 }
-#main .navigation {
+body[lang=fa-IR] #main .navigation {
 	font-size: 12pt;
 }
-.fa-IR .post .entry-title {
+body[lang=fa-IR] .post .entry-title {
 	font-size: 18pt;
 }
-.fa-IR .post .entry-header .entry-shortmeta {
+body[lang=fa-IR] .post .entry-header .entry-shortmeta {
 	font-size: 12pt;
 }
-.fa-IR .post .entry-summary,
-.fa-IR .post .entry-content {
+body[lang=fa-IR] .post .entry-summary,
+body[lang=fa-IR] .post .entry-content {
 	font-size: 13pt;
 }
-.fa-IR .post .entry-meta {
+body[lang=fa-IR] .post .entry-meta {
 	font-size: 12pt;
 }
-.fa-IR .widget .entry-title {
+body[lang=fa-IR] .widget .entry-title {
 	font-size: 16pt;
 }
-.fa-IR .widget .entry-content {
+body[lang=fa-IR] .widget .entry-content {
 	font-size: 12pt;
 }
-.fa-IR #footer {
+body[lang=fa-IR] #footer {
 	font-size: 11pt;
 }
-.fa-IR #footer .copyright-designer {
+body[lang=fa-IR] #footer .copyright-designer {
 	font-family: "B Mitra", Tahoma, Arial;
 	font-size: 10pt;
 }
@@ -109,14 +109,14 @@
  * For wordpress.css
  */
 
-.fa-IR #pings-title,
-.fa-IR #comments-title {
+body[lang=fa-IR] #pings-title,
+body[lang=fa-IR] #comments-title {
 	font-size: 11pt;
 }
-.fa-IR .commentlist li cite {
+body[lang=fa-IR] .commentlist li cite {
 	font-size: 1.1em;
 }
-.fa-IR .comment-body .comment-meta a {
+body[lang=fa-IR] .comment-body .comment-meta a {
 	font-size: 11pt;
 }
 
@@ -124,7 +124,7 @@
  * For post-formats.css
  */
 
-.fa-IR .gallery-caption {
+body[lang=fa-IR] .gallery-caption {
 	font-size: 12pt;
 }
 
@@ -132,6 +132,6 @@
  * For match other languages with this language
  */
 
-.fa-IR .en-US {
+body[lang=fa-IR] *[lang=en-US] {
 	font-size: 11pt;
 }
