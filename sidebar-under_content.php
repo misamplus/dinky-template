@@ -14,8 +14,8 @@ if ( !defined('ABSPATH')) exit;
  * @twitter: @misamplus
  */
 ?>
+		<?php if ( is_active_sidebar( 'under_content' ) ) : ?>
 		<div id="sidebar-under_content" class="sidebar container">
-			<?php if ( is_active_sidebar( 'under_content' ) ) : ?>
 				<?php dynamic_sidebar( 'under_content' ); ?>
-			<?php endif; ?>
 		</div>
+		<?php endif; ?>
