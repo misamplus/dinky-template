@@ -38,7 +38,7 @@ if ( !defined('ABSPATH')) exit;
 				</div>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 			</nav>
-			<?php if (((is_home() & dinky_get_theme_option('cover_display_home')) or (!is_home() & dinky_get_theme_option('cover_display_other'))) or defined('HAVE_COVER')) : ?>
+			<?php if ( ( is_home() & dinky_get_theme_option('cover_display_home') ) or ( !is_home() & dinky_get_theme_option('cover_display_other') ) ) : ?>
 			<div id="cover">
 				<img alt="cover" class="cover" src="<?php echo get_header_image(); ?>" />
 				<div id="title">
