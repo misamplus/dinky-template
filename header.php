@@ -29,7 +29,7 @@ if ( !defined('ABSPATH')) exit;
 		<?php if (dinky_get_theme_option('tag_favicon') != ''): ?><link rel="shortcut icon" type="image/x-icon" href='<?php echo dinky_get_theme_option('tag_favicon'); ?>' /><?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
-	<body id="top" <?php body_class(get_bloginfo('language')); ?>>
+	<body id="top" lang="<?php bloginfo('language'); ?>" <?php body_class(); ?>>
 		<header id="masthead"  role="banner">
 			<nav id="mobile-navigation" class="container" role="navigation">
 				<div id="mobile-title">
