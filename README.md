@@ -31,17 +31,17 @@ Contents
 2. Screenshots
 ==============================
 
-<img src="https://github.com/misamplus/dinky-template/raw/master/screenshot.png" alt="Dinky WordPress Theme Screenshot" title="Screenshot" width="600px" height="450px" />
+<img src="https://raw.github.com/misamplus/dinky-theme/master/screenshot.png" alt="Dinky WordPress Theme Screenshot" title="Screenshot" width="600px" height="450px" />
 
 3. Download
 ==============================
 
-* <http://wordpress.org/themes/dinky/>
+* http://wordpress.org/themes/dinky/
 
 4. License
 ==============================
 
-Copyright (C) 2013  Misam Saki, <http://misam.ir/>
+Copyright (C) 2013  Misam Saki, http://misam.ir
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
