@@ -391,9 +391,12 @@ a.mobile-select-menu:hover {
 		margin: 0 auto;
 	}
 }
-#main.full {
+#main.center {
 	display: block;
 	margin: auto;
+}
+#main.full {
+	width: auto;
 }
 #main .navigation {
 	margin-bottom: 10px;
