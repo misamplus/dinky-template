@@ -4,7 +4,7 @@ if ( !defined('ABSPATH')) exit;
  * The template for displaying image attachments.
  *
  * @package Dinky
- * @version 1.3
+ * @version 1.3.1
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
@@ -20,7 +20,7 @@ if ( !defined('ABSPATH')) exit;
 				<?php get_sidebar('up_main'); ?>
 				<?php if ( have_posts() ) : ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'content', 'image-attachment' ); ?>
+						<?php get_template_part( 'content', 'image_attachment' ); ?>
 						<?php comments_template( '', true ); ?>
 					<?php endwhile; ?>
 					<?php dinky_pages_nav(); ?>

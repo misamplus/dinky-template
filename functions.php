@@ -4,7 +4,7 @@ if ( !defined('ABSPATH')) exit;
  * Dinky theme functions and definitions.
  *
  * @package Dinky
- * @version 1.3
+ * @version 1.3.1
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
@@ -112,12 +112,12 @@ function dinky_scripts_styles() {
 
 	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-08-26' );
 	wp_add_inline_style( 'dinky-style', dinky_get_custome_style() ); // Add custom style
-	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '1.3' );
+	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-08-26' );
 
-	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '1.3' );
+	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '2013-08-26' );
 	$wp_styles->add_data( 'dinky-ie', 'conditional', 'lt IE' );
 
-	wp_enqueue_script( 'dinky-ready', get_template_directory_uri() . '/js/ready.js', array('jquery'), '1.3' );
+	wp_enqueue_script( 'dinky-ready', get_template_directory_uri() . '/js/ready.js', array('jquery'), '2013-08-26' );
 
 }
 add_action( 'wp_enqueue_scripts', 'dinky_scripts_styles' );

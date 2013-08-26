@@ -4,7 +4,7 @@ if ( !defined('ABSPATH')) exit;
  * Dinky theme Options
  *
  * @package Dinky
- * @version 1.3
+ * @version 1.3.1
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
@@ -15,8 +15,8 @@ if ( !defined('ABSPATH')) exit;
  */
 
 function dinky_admin_enqueue_scripts( $hook_suffix ) {
-	wp_enqueue_style( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.css', false, '1.3' );
-	wp_enqueue_script( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.js', array( 'farbtastic' ), '1.3' );
+	wp_enqueue_style( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.css', false, '2013-08-26' );
+	wp_enqueue_script( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.js', array( 'farbtastic' ), '2013-08-26' );
 	wp_enqueue_style( 'farbtastic' );
 }
 add_action( 'admin_print_styles-appearance_page_theme_options', 'dinky_admin_enqueue_scripts' );

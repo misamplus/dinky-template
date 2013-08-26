@@ -6,7 +6,7 @@ if ( !defined('ABSPATH')) exit;
  * The template for displaying pages with 'No Sidebar' template.
  * 
  * @package Dinky
- * @version 1.3
+ * @version 1.3.1
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir

@@ -4,7 +4,7 @@ if ( !defined('ABSPATH')) exit;
  * The template for displaying Post Format pages.
  *
  * @package Dinky
- * @version 1.3
+ * @version 1.3.1
  * @since Dinky 1.2
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
