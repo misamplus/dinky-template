@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Dinky package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-08-26 21:04+0330\n"
+"PO-Revision-Date: 2013-08-26 21:10+0330\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -125,13 +125,9 @@ msgstr ""
 msgid "No Sidebar"
 msgstr "بدون ستون کناری"
 
-#: page-with_cover.php:4
-msgid "With Cover"
-msgstr "همراه با کاور"
-
-#: page-with_cover_no_sidebar.php:4
-msgid "With Cover - No Sidebar"
-msgstr "همراه با کاور - بدون ستون کناری"
+#: page-no_sidebar_full_main.php:4
+msgid "No Sidebar - Full Main"
+msgstr "بدون ستون کناری - ستون اصلی تمام اندازه"
 
 #: author.php:22
 msgid "Author Archives: %s"
