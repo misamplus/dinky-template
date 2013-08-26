@@ -109,12 +109,14 @@ input[type=reset]:hover,
 input[type=button]:hover,
 input[type=submit]:hover {
 	background: #FFF;
+	color: #444;
 }
 a.button:active,
 input[type=reset]:active,
 input[type=button]:active,
 input[type=submit]:active {
 	background: #DFDFDF;
+	color: #444;
 }
 select {
 	display: inline-block;
@@ -131,10 +133,12 @@ select {
 }
 select:hover {
 	background: #FFF;
+	color: #444;
 }
 select:focus {
 	background: #FFF;
 	outline: none;
+	color: #444;
 }
 input[type=checkbox],
 input[type=radio],
@@ -264,7 +268,7 @@ img.cover {
 	color: #444;
 }
 #social {
-	margin: 0 0 25px;
+	margin: 10px 0 25px;
 	text-align: center;
 	font-family: "Social Icons";
 }
@@ -427,7 +431,7 @@ a.mobile-select-menu:hover {
 	width: auto;
 }
 #main .navigation {
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 	clear: both;
 	text-align: center;
 }
@@ -588,7 +592,7 @@ img[class*="attachment-"] {
 	border: 3px solid #E6E6E6;
 }
 .widget .entry-header {
-	margin: 0 -20px 5px;
+	margin: -10px -20px 5px;
 	padding: 5px 0;
 }
 .widget .entry-title {
@@ -605,7 +609,7 @@ img[class*="attachment-"] {
 	border-bottom: 1px dotted;
 }
 .widget .entry-content {
-	padding: 0 20px 10px;
+	padding: 10px 20px;
 }
 .widget ul li {
 	list-style-image: url(../img/list_arr.png);
