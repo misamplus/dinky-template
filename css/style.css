@@ -48,6 +48,10 @@ hr {
 	padding: 0;
 	color: #E6E6E6;
 }
+fieldset {
+	border: 1px solid #E6E6E6;
+	padding: 10px;
+}
 button,
 input,
 select,
@@ -69,7 +73,6 @@ input[type=email] {
 }
 area,
 textarea {
-	width: 100%;
 	height: auto;
 	margin: 5px;
 	overflow: auto;
@@ -112,6 +115,31 @@ input[type=reset]:active,
 input[type=button]:active,
 input[type=submit]:active {
 	background: #DFDFDF;
+}
+select {
+	display: inline-block;
+	margin: 5px;
+	padding: 4px 10px;
+	background: #F3F3F3;
+	border: 1px solid #DDD;
+	border-radius: 2px;
+	color: #444;
+	cursor: pointer;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+select:hover {
+	background: #FFF;
+}
+select:focus {
+	background: #FFF;
+	outline: none;
+}
+input[type=checkbox],
+input[type=radio],
+input[type=file] {
+	margin: 5px;
 }
 label {
 	display: inline-block;
