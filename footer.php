@@ -25,7 +25,7 @@ if ( !defined('ABSPATH')) exit;
 				?>
 				<p class="copyright-designer"><?php _e('<strong>Dinky</strong> WordPress Theme - Theme By <a href="http://en.misam.ir/" title="Misam Saki">Misam Saki</a>', 'dinky'); ?></p>
 			</div>
-			<a href="#top" title="<?php _e('To Top','dinky'); ?>" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span><?php _e('To Top','dinky'); ?></a>
+			<a href="#wrapper" title="<?php _e('To Top','dinky'); ?>" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span><?php _e('To Top','dinky'); ?></a>
 		<?php wp_footer(); ?>
 		</footer>
 	</body>
