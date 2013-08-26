@@ -114,6 +114,9 @@
 #commentform p {
 	margin: 10px 0;
 }
+#commentform #comment {
+	width: 100%;
+}
 #cancel-comment-reply-link {
 	color: #C45252;
 }

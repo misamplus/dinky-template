@@ -110,7 +110,7 @@ function dinky_scripts_styles() {
 	);
 	wp_enqueue_style( 'dinky-fonts-2', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 
-	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-08-25' );
+	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-08-26' );
 	wp_add_inline_style( 'dinky-style', dinky_get_custome_style() ); // Add custom style
 	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '1.3' );
 
