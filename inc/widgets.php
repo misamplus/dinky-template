@@ -41,9 +41,7 @@ class dinky_Widget_Search extends WP_Widget {
 		// Remove current theme search form and replace it by Dinky theme search form 
 		?>
 		<form role="search" method="get" id="dinky-searchform" action="<?php echo home_url() ?>">
-			<div>
-				<input type="text" name="s" id="dinky-s" placeholder="<?php _e('Search...','dinky'); ?>" autocomplete="off">
-			</div>
+			<input type="text" name="s" id="dinky-s" placeholder="<?php _e('Search...','dinky'); ?>" autocomplete="off">
 		</form>
 		<?php
 
