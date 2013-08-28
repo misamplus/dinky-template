@@ -19,7 +19,6 @@ Contents
 * Version: 1.3.1
 * Since: Dinky 1.0
 * Theme URI: http://wordpress.org/themes/dinky/
-* Github repository URI: http://github.com/misamplus/dinky-theme/
 * More information: http://en.misam.ir/projects/dinky-theme/
 * License: GNU General Public License v3 or later
 * Copyright (C) 2013  Misam Saki, misam.ir
@@ -63,18 +62,18 @@ Images:
 All images are by me (Misam Saki) and they are released under the terms of the GNU General Public License v3 or later.
 
 Fonts:
-BMitra-Regular - ​http://www.azfonts.net/load_font/bmitra.html
+BMitra-Regular - ​azfonts.net/load_font/bmitra.html
 License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
 Copyright: (c) 2000 Borna Rayaneh
 
-BYekan-Regular - ​http://cooltext.com/Download-Font-B+Yekan
+BYekan-Regular - ​cooltext.com/Download-Font-B+Yekan
 License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
 Copyright: Masoud Sepehr
 
-Entezar-Regular - ​http://vahdati-ertebat.net/2011/04/04/entezar-font/
+Entezar-Regular - ​vahdati-ertebat.net/2011/04/04/entezar-font/
 License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
 Copyright: A. Banaei
 
-social-icons - ​https://github.com/tombryan/social-icon-font/
+social-icons - ​github.com/tombryan/social-icon-font/
 License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
 Copyright: Tom Bryan
