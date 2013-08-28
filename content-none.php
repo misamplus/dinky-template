@@ -19,7 +19,7 @@ if ( !defined('ABSPATH')) exit;
 							<h2 class="entry-title"><?php _e( 'Nothing Found', 'dinky' ); ?></h2>
 						</div>
 						<div class="entry-content">
-							<p><?php _e( 'No posts to display', 'dinky' ); ?></p>
+							<p><?php _e( 'No posts to display.', 'dinky' ); ?></p>
 							<?php get_search_form(); ?>
 						</div>
 					</div>
