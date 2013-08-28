@@ -63,17 +63,17 @@ Images
 
 Fonts
 * BMitra-Regular - azfonts.net/load_font/bmitra.html/
-* * License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
-* * Copyright: (c) 2000 Borna Rayaneh
+ * icense: Distributed under the SIL Open Font Licence (OFL), Version 1.0
+ * Copyright: (c) 2000 Borna Rayaneh
 
 * BYekan-Regular - ​cooltext.com/Download-Font-B+Yekan/
-* * License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
-* * Copyright: Masoud Sepehr
+ * License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
+ * Copyright: Masoud Sepehr
 
 * Entezar-Regular - ​vahdati-ertebat.net/2011/04/04/entezar-font/
-* * License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
-* * Copyright: A. Banaei
+ * License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
+ * Copyright: A. Banaei
 
 * social-icons - ​github.com/tombryan/social-icon-font/
-* * License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
-* * Copyright: Tom Bryan
+ * License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
+ * Copyright: Tom Bryan
