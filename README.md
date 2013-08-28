@@ -62,11 +62,11 @@ Images:
 All images are by me (Misam Saki) and they are released under the terms of the GNU General Public License v3 or later.
 
 Fonts:
-BMitra-Regular - ​azfonts.net/load_font/bmitra.html
+BMitra-Regular - ​azfonts.net/load_font/bmitra.html/
 License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
 Copyright: (c) 2000 Borna Rayaneh
 
-BYekan-Regular - ​cooltext.com/Download-Font-B+Yekan
+BYekan-Regular - ​cooltext.com/Download-Font-B+Yekan/
 License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
 Copyright: Masoud Sepehr
 
@@ -74,6 +74,6 @@ Entezar-Regular - ​vahdati-ertebat.net/2011/04/04/entezar-font/
 License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
 Copyright: A. Banaei
 
-social-icons - ​github.com/tombryan/social-icon-font/
+social-icons - ​github.com/tombryan/social-icon-font/
 License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
 Copyright: Tom Bryan
