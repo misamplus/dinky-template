@@ -15,6 +15,9 @@ if ( !defined('ABSPATH')) exit;
  */
 ?>
 				<div id="post-0" class="post error404">
+					<div class="entry-header">
+						<h2 class="entry-title"><?php _e( 'Not Found', 'dinky' ); ?></h2>
+					</div>
 					<div class="entry-content">
 						<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'dinky' ); ?></p>
 						<?php get_search_form(); ?>

@@ -23,7 +23,7 @@ if ( !defined('ABSPATH')) exit;
 						<?php get_template_part( 'content', get_post_format() ); ?>
 						<?php comments_template( '', true ); ?>
 					<?php endwhile; ?>
-					<?php dinky_pages_nav(); ?>
+					<?php dinky_archive_nav(); ?>
 				<?php else : ?>
 					<?php get_template_part( 'content', 'none' ); ?>
 				<?php endif;?>

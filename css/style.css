@@ -430,6 +430,12 @@ a.mobile-select-menu:hover {
 #main.full {
 	width: auto;
 }
+#main .archive-title {
+	margin: 10px;
+}
+#main .archive-description {
+	margin: 0 10px;
+}
 #main .navigation {
 	padding-bottom: 10px;
 	clear: both;
@@ -448,12 +454,6 @@ a.mobile-select-menu:hover {
 	padding: 3px 5px;
 	margin: 2px;
 	border: 1px solid #000;
-}
-#main .page-title {
-	margin: 10px;
-}
-#main .page-description {
-	margin: 0 10px;
 }
 .post {
 	margin: 10px 5px;

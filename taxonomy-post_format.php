@@ -18,17 +18,17 @@ if ( !defined('ABSPATH')) exit;
 		<div id="content" class="container" role="main">
 			<div id="main"<?php if (!dinky_get_theme_option('sidebar_display')): ?> class="center <?php if (dinky_get_theme_option('fullmain_nosidebar')): ?> full<?php endif; ?>"<?php endif; ?>>
 				<?php get_sidebar('up_main'); ?>
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( '%s Archives', 'dinky' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
+				<header class="archive-header">
+					<h1 class="archive-title"><?php printf( __( '%s Archives', 'dinky' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
+					<?php if ( category_description() ) : ?>
+					<div class="archive-description"><?php echo tag_description(); ?></div>
+					<?php endif; ?>
 				</header>
-				<?php if ( category_description() ) : ?>
-					<div class="page-description"><?php echo tag_description(); ?></div>
-				<?php endif; ?>
 				<?php if ( have_posts() ) : ?>
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part( 'content', get_post_format() ); ?>
 					<?php endwhile; ?>
-					<?php dinky_pages_nav(); ?>
+					<?php dinky_archive_nav(); ?>
 				<?php else : ?>
 					<?php get_template_part( 'content', 'none' ); ?>
 				<?php endif;?>

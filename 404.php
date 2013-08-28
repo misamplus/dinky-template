@@ -18,9 +18,6 @@ if ( !defined('ABSPATH')) exit;
 		<div id="content" class="container" role="main">
 			<div id="main"<?php if (!dinky_get_theme_option('sidebar_display')): ?> class="center <?php if (dinky_get_theme_option('fullmain_nosidebar')): ?> full<?php endif; ?>"<?php endif; ?>>
 				<?php get_sidebar('up_main'); ?>
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Not Found', 'dinky' ); ?></h1>
-				</header>
 				<?php get_template_part( 'content', '404' ); ?>
 			</div>
 			<?php get_sidebar(); ?>

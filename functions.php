@@ -110,7 +110,7 @@ function dinky_scripts_styles() {
 	);
 	wp_enqueue_style( 'dinky-fonts-2', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 
-	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-08-26' );
+	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-08-28' );
 	wp_add_inline_style( 'dinky-style', dinky_get_custome_style() ); // Add custom style
 	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-08-26' );
 
@@ -233,17 +233,17 @@ function dinky_widgets_init() {
 add_action( 'widgets_init', 'dinky_widgets_init' );
 
 /**
- * @since Dinky 1.2 (changed function name. created in Dinky 1.0)
+ * @since Dinky 1.2 (changed function name(1.2, 1.3.2). created in Dinky 1.0)
  */
-function dinky_pages_nav() {
+function dinky_archive_nav() {
 	global $wp_query;
 	if ( $wp_query->max_num_pages > 1 ) : ?>
-		<nav id="pages-nav" class="navigation" role="navigation">
+		<nav id="archive-nav" class="navigation" role="navigation">
 			<?php if(function_exists('wp_pagenavi')) : ?>
 				<?php wp_pagenavi(); ?>
 			<?php else: ?>
-			<?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'dinky' ) ); ?>
-			<?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'dinky' ) ); ?>
+			<?php next_posts_link( __( '<span class="previous">&larr;</span> Older posts', 'dinky' ) ); ?>
+			<?php previous_posts_link( __( 'Newer posts <span class="next">&rarr;</span>', 'dinky' ) ); ?>
 			<?php endif; ?>
 		</nav>
 	<?php endif;

@@ -19,8 +19,8 @@ if ( !defined('ABSPATH')) exit;
 			<div id="main"<?php if (!dinky_get_theme_option('sidebar_display')): ?> class="center <?php if (dinky_get_theme_option('fullmain_nosidebar')): ?> full<?php endif; ?>"<?php endif; ?>>
 				<?php get_sidebar('up_main'); ?>
 				<?php if ( have_posts() ) the_post(); ?>
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Author Archives: %s', 'dinky' ), '<span>'. get_the_author() . '</span>' ); ?></h1>
+				<header class="archive-header">
+					<h1 class="archive-title"><?php printf( __( 'Author Archives: %s', 'dinky' ), '<span>'. get_the_author() . '</span>' ); ?></h1>
 				</header>
 				<?php get_template_part( 'author-bio' ); ?>
 				<?php rewind_posts(); ?>
@@ -28,7 +28,7 @@ if ( !defined('ABSPATH')) exit;
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part( 'content', get_post_format() ); ?>
 					<?php endwhile; ?>
-					<?php dinky_pages_nav(); ?>
+					<?php dinky_archive_nav(); ?>
 				<?php else : ?>
 					<?php get_template_part( 'content', 'none' ); ?>
 				<?php endif;?>
