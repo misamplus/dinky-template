@@ -63,7 +63,7 @@ Images
 
 Fonts
 * BMitra-Regular - azfonts.net/load_font/bmitra.html/
- * icense: Distributed under the SIL Open Font Licence (OFL), Version 1.0
+ * License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
  * Copyright: (c) 2000 Borna Rayaneh
 
 * BYekan-Regular - ​cooltext.com/Download-Font-B+Yekan/
