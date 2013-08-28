@@ -4,7 +4,7 @@ if ( !defined('ABSPATH')) exit;
  * Dinky theme Options
  *
  * @package Dinky
- * @version 1.3.1
+ * @version 1.3.2
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir

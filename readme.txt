@@ -1,7 +1,7 @@
 Dinky Theme
 ==========
 
-Dinky WordPress Theme Version 1.3.1
+Dinky WordPress Theme Version 1.3.2
 
 Contents
 ==============================
@@ -14,7 +14,7 @@ Contents
 ==============================
 
 * Package: Dinky
-* Version: 1.3.1
+* Version: 1.3.2
 * Since: Dinky 1.0
 * Theme URI: http://wordpress.org/themes/dinky/
 * Github repository URI: http://github.com/misamplus/dinky-theme/
@@ -29,7 +29,7 @@ Contents
 2. License
 ==============================
 
-Dinky WordPress theme Version 1.3.1
+Dinky WordPress theme Version 1.3.2
 Copyright (C) 2013  Misam Saki, misam.ir
 
 This program is free software: you can redistribute it and/or modify
@@ -48,22 +48,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 3. Resources License
 ==============================
 
-Images:
-All images are by me (Misam Saki) and they are released under the terms of the GNU General Public License v3 or later.
+Images
+* All images are by me (Misam Saki) and they are released under the terms of the GNU General Public License v3 or later.
 
-Fonts:
-BMitra-Regular - ​http://www.azfonts.net/load_font/bmitra.html
-License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
-Copyright: (c) 2000 Borna Rayaneh
+Fonts
+* BMitra-Regular - azfonts.net/load_font/bmitra.html/
+ * License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
+ * Copyright: (c) 2000 Borna Rayaneh
 
-BYekan-Regular - ​http://cooltext.com/Download-Font-B+Yekan
-License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
-Copyright: Masoud Sepehr
+* BYekan-Regular - ​cooltext.com/Download-Font-B+Yekan/
+ * License: Distributed under the SIL Open Font Licence (OFL), Version 1.0
+ * Copyright: Masoud Sepehr
 
-Entezar-Regular - ​http://vahdati-ertebat.net/2011/04/04/entezar-font/
-License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
-Copyright: A. Banaei
+* Entezar-Regular - ​vahdati-ertebat.net/2011/04/04/entezar-font/
+ * License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
+ * Copyright: A. Banaei
 
-social-icons - ​https://github.com/tombryan/social-icon-font/
-License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
-Copyright: Tom Bryan
+* social-icons - ​github.com/tombryan/social-icon-font/
+ * License: Distributed under the SIL Open Font Licence (OFL), Version 1.1
+ * Copyright: Tom Bryan
