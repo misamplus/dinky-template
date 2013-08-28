@@ -203,8 +203,8 @@ function dinky_widgets_init() {
 		'name' => __( 'Sidebar column', 'dinky' ),
 		'id' => 'sidebar',
 		'description' => __( '', 'dinky' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="entry-content">',
-		'after_widget' => '</div></div>',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="entry-content">',
+		'after_widget' => '</div></aside>',
 		'before_title' => '<div class="entry-header"><span class="entry-title">',
 		'after_title' => '</span></div>'
 	) );
@@ -213,8 +213,8 @@ function dinky_widgets_init() {
 		'name' => __( 'Up main column', 'dinky' ),
 		'id' => 'up_main',
 		'description' => __( '', 'dinky' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="entry-content">',
-		'after_widget' => '</div></div>',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="entry-content">',
+		'after_widget' => '</div></aside>',
 		'before_title' => '<div class="entry-header"><span class="entry-title">',
 		'after_title' => '</span></div>'
 	) );
@@ -223,8 +223,8 @@ function dinky_widgets_init() {
 		'name' => __( 'Under content (up footer)', 'dinky' ),
 		'id' => 'under_content',
 		'description' => __( '', 'dinky' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s"><div class="entry-content">',
-		'after_widget' => '</div></div>',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="entry-content">',
+		'after_widget' => '</div></aside>',
 		'before_title' => '<div class="entry-header"><span class="entry-title">',
 		'after_title' => '</span></div>'
 	) );
