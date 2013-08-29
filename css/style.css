@@ -54,8 +54,7 @@ fieldset {
 }
 button,
 input,
-select,
-textarea {
+select {
 	font-size: 80%;
 	max-width: 100%;
 }
@@ -574,6 +573,10 @@ img[class*="attachment-"] {
 #sidebar-under_content {
 	clear: both;
 }
+#sidebar-up_main .widget,
+#sidebar-under_content .widget {
+	margin: 20px 0;
+}
 #sidebar {
 	display: inline-block;
 	float: right;
@@ -586,8 +589,10 @@ img[class*="attachment-"] {
 		width: 100%
 	}
 }
-.widget {
+#sidebar .widget {
 	margin: 20px;
+}
+.widget {
 	background: #F8F8F8;
 	border: 3px solid #E6E6E6;
 }
