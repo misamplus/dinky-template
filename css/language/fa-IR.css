@@ -1,5 +1,5 @@
 /**
- * Style for fa_IR (body.fa-IR) language typography
+ * Style for Farsi-Iran (body.fa-IR) language typography
  * Package: Dinky
  * Since: Dinky 1.2 (in css/language.css at Dinky 1.0)
  * Theme URI: http://wordpress.org/themes/dinky/
@@ -101,7 +101,6 @@ body[lang=fa-IR] #footer {
 	font-size: 11pt;
 }
 body[lang=fa-IR] #footer .copyright-designer {
-	font-family: "B Mitra", Tahoma, Arial;
 	font-size: 10pt;
 }
 
@@ -133,5 +132,8 @@ body[lang=fa-IR] .gallery-caption {
  */
 
 body[lang=fa-IR] *[lang=en-US] {
+	font-size: 11pt;
+}
+body[lang=fa-IR] *[lang=ar] {
 	font-size: 11pt;
 }
