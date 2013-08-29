@@ -63,7 +63,7 @@ function dinky_setup() {
 		'beach' => array(
 			'url' => '%s/img/cover/beach.jpg',
 			'thumbnail_url' => '%s/img/cover/beach-thumbnail.jpg',
-			'description' => __( 'Beach', 'dinky' )
+			'description' => __( 'Beach', 'dinky' ) . ' - Iran / Gilan / Chamkhale'
 		)
 	) );
 }
@@ -99,20 +99,14 @@ function dinky_scripts_styles() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 
-	
+	$fonts = __('Open+Sans:400italic,700italic,400,700|Droid+Serif:400italic,700italic,400,700', 'dinky');
 	$protocol = is_ssl() ? 'https' : 'http';
-	$query_args = array(
-		'family' => 'Open+Sans:400italic,700italic,400,700',
-	);
+	$query_args = array('family' => $fonts);
 	wp_enqueue_style( 'dinky-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
-	$query_args = array(
-		'family' => 'Droid+Serif:400italic,700italic,400,700',
-	);
-	wp_enqueue_style( 'dinky-fonts-2', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 
-	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-08-28' );
+	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-08-29' );
 	wp_add_inline_style( 'dinky-style', dinky_get_custome_style() ); // Add custom style
-	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-08-26' );
+	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-08-29' );
 
 	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '2013-08-26' );
 	$wp_styles->add_data( 'dinky-ie', 'conditional', 'lt IE' );
