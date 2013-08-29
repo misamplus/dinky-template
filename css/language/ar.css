@@ -88,7 +88,8 @@ body[lang=ar] #footer {
 	font-size: 10pt;
 }
 body[lang=ar] #footer .copyright-designer {
-	font-size: 9pt;
+	font-family: "Droid Arabic Naskh", Arial;
+	font-size: 8pt;
 }
 
 /**
