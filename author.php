@@ -4,7 +4,7 @@ if ( !defined('ABSPATH')) exit;
  * The template for displaying Author archive pages.
  *
  * @package Dinky
- * @version 1.3.2
+ * @version 1.4
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir

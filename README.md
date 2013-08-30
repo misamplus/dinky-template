@@ -1,7 +1,7 @@
 Dinky Theme
 ==========
 
-Dinky WordPress Theme Version 1.3.2
+Dinky WordPress Theme Version 1.4
 
 Contents
 ==============================
@@ -16,7 +16,7 @@ Contents
 ==============================
 
 * Package: Dinky
-* Version: 1.3.2
+* Version: 1.4
 * Since: Dinky 1.0
 * Theme URI: http://wordpress.org/themes/dinky/
 * More information: http://en.misam.ir/projects/dinky-theme/

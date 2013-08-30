@@ -4,7 +4,7 @@ if ( !defined('ABSPATH')) exit;
  * The template used for displaying 404 page contents.
  *
  * @package Dinky
- * @version 1.3.2
+ * @version 1.4
  * @since Dinky 1.2
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
