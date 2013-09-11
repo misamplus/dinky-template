@@ -54,7 +54,7 @@ a.mobile-select-menu {
 	margin: 6px 10px 0 0;
 }
 .widget ul li:before {
-	content: "«";
+	content: "»";
 	margin: 0 -10px 0 10px;
 }
 #toTop {
