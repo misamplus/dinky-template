@@ -3,8 +3,7 @@
  * Package: Dinky
  * Since: Dinky 1.0
  * Theme URI: http://wordpress.org/themes/dinky/
- * Github repository URI: http://github.com/misamplus/dinky-theme/
- * More information: http://en.misam.ir/projects/dinky-theme/
+ * Github: http://github.com/misamplus/dinky-theme/
  * License: GNU General Public License v3 or later
  * Copyright (C) 2013  Misam Saki, misam.ir
  * Author: Misam Saki
@@ -182,8 +181,9 @@ audio:not([controls]) {
 	display: none;
 	height: 0;
 }
+.hidden,
 [hidden] {
-	display: none;
+	display: none !important;
 }
 body {
 	direction: ltr;
@@ -302,6 +302,27 @@ img.cover {
 	#main-navigation {
 		display: none;
 	}
+}
+#main-navigation.fixed {
+	position: fixed;
+	z-index: 999999999;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	padding: 10px 0;
+	background: #FFF;
+	box-shadow: 0 0 18px rgba(0, 0, 0, .4);
+}
+#main-navigation.have-logo.fixed .nav-menu {
+	float: right;
+}
+#main-navigation .logo {
+	display: none;
+}
+#main-navigation.have-logo.fixed .logo {
+	display: block;
+	float: left;
+	max-width: 128px;
 }
 #main-navigation ul {
 	display: inline-block;
@@ -570,10 +591,15 @@ img[class*="attachment-"] {
 	margin: 20px 0 0;
 }
 #sidebar-up_main,
+#sidebar-under_main,
 #sidebar-under_content {
 	clear: both;
 }
+#sidebar-footer {
+	min-height: 250px;
+}
 #sidebar-up_main .widget,
+#sidebar-under_main .widget,
 #sidebar-under_content .widget {
 	margin: 20px 0;
 }
@@ -617,8 +643,15 @@ img[class*="attachment-"] {
 	padding: 10px 20px;
 }
 .widget ul li {
-	list-style-image: url(../img/list_arr.png);
-	margin: 6px 0 0 15px;
+	list-style: none;
+	margin: 6px 0 0 10px;
+}
+.widget ul li:before {
+	content: "»";
+	margin: 0 10px 0 -10px;
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: 700;
 }
 .widget a {
 	border-bottom: 1px dotted;
@@ -665,18 +698,41 @@ img[class*="attachment-"] {
 	background: none;
 	border: none;
 }
+#sidebar-footer .widget {
+	display: inline-table;
+	width: 33%;
+	background: none;
+	border: none;
+}
+@media screen and (max-width:1000px) {
+	#sidebar-footer .widget {
+		width: 50%;
+	}
+}
+@media screen and (max-width:600px) {
+	#sidebar-footer .widget {
+		width: 100%;
+	}
+}
+#sidebar-footer .widget .entry-title {
+	color: #FFF;
+}
 #footer {
 	margin: 30px 0 0;
+	background: #222;
 	border-top: 1px solid #E6E6E6;
 	clear: both;
-	padding: 10px 0 5px;
-	text-align: center;
 	font-style: normal;
 }
-#footer a {
+#footer .copyright {
+	padding: 5px 0;
+	border-top: 1px solid #363636; /* E6E6E6 */
+	text-align: center;
+}
+#footer .copyright a {
 	color: #0085BD;
 }
-#footer a:hover {
+#footer .copyright a:hover {
 	color: #444;
 }
 #toTop {

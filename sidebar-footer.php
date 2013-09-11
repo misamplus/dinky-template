@@ -1,7 +1,7 @@
 <?php
 if ( !defined('ABSPATH')) exit;
 /**
- * The sidebar containing the Under Content Widgets Area.
+ * The sidebar containing the Footer Widgets Area.
  *
  * @package Dinky
  * @since Dinky 1.0
@@ -13,8 +13,8 @@ if ( !defined('ABSPATH')) exit;
  * @twitter: @misamplus
  */
 ?>
-		<?php if ( is_active_sidebar( 'under_content' ) ) : ?>
-		<div id="sidebar-under_content" class="sidebar container">
-				<?php dynamic_sidebar( 'under_content' ); ?>
-		</div>
-		<?php endif; ?>
+			<?php if ( is_active_sidebar( 'footer' ) ) : ?>
+			<div id="sidebar-footer" class="sidebar container">
+				<?php dynamic_sidebar( 'footer' ); ?>
+			</div>
+			<?php endif; ?>

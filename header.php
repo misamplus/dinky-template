@@ -4,7 +4,6 @@ if ( !defined('ABSPATH')) exit;
  * The template for displaying the Header.
  *
  * @package Dinky
- * @version 1.4
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
@@ -60,7 +59,11 @@ if ( !defined('ABSPATH')) exit;
 			</div>
 			<?php endif; ?>
 			<?php get_template_part( 'social' ); ?>
-			<nav id="main-navigation" class="container" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			<nav id="main-navigation" role="navigation"<?php if (dinky_get_theme_option('topmenu_logo') !=''): ?> class="have-logo"<?php endif; ?>>
+				<div class="container">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu menu-primary' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'top', 'menu_class' => 'nav-menu menu-top hidden' ) ); ?>
+					<?php if (dinky_get_theme_option('topmenu_logo') !=''): ?><img alt="topmenu-logo" class="logo" src="<?php echo dinky_get_theme_option('topmenu_logo'); ?>"><?php endif; ?>
+				</div>
 			</nav>
 		</header>

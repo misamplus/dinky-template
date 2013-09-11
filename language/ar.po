@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Dinky package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-08-31 00:02+0330\n"
+"PO-Revision-Date: 2013-09-07 15:54+0330\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,8 +13,7 @@ msgstr ""
 "Last-Translator: Misam Saki <info@misam.ir>\n"
 "Language-Team: \n"
 
-#: functions.php:x (Do not traslate it. You must replaced it by needed fonts
-#: to load from google)
+#: Don't traslate it. You must replaced it by needed fonts to load from google
 msgid ""
 "Open+Sans:400italic,700italic,400,700|Droid+Serif:400italic,700italic,400,700"
 msgstr ""
@@ -111,7 +110,7 @@ msgid ""
 "<strong>Dinky</strong> WordPress Theme - Theme By <a href=\"http://en.misam."
 "ir/\" title=\"Misam Saki\">Misam Saki</a>"
 msgstr ""
-"قالب وردپرس <strong>الدینکی (أنيق)</strong> - قالب بواسطة <a href=\"http://"
+"قالب وردپرس <strong>دینکی (أنيق)</strong> - قالب بواسطة <a href=\"http://"
 "misam.ir/\" title=\"میثم ساکی\">میثم ساکی</a>"
 
 #: footer.php:x
@@ -274,6 +273,10 @@ msgid "Primary Menu"
 msgstr "القائمة الأولية"
 
 #: functions.php:x
+msgid "Top Menu"
+msgstr "القائمة العلوية"
+
+#: functions.php:x
 msgid "Beach"
 msgstr "شاطئ"
 
@@ -286,16 +289,24 @@ msgid "Page %s"
 msgstr "صفحة %s"
 
 #: functions.php:x
-msgid "Sidebar column"
-msgstr "العمود الجانبي"
+msgid "Sidebar Widgets Area"
+msgstr "العمود الجانبي الحاجيات المنطقة"
 
 #: functions.php:x
-msgid "Up main column"
-msgstr "فوق العمود الرئيسي"
+msgid "Up Main Widgets Area"
+msgstr "فوق العمود الرئيسي الحاجيات المنطقة"
 
 #: functions.php:x
-msgid "Under content (up footer)"
-msgstr "تحت المحتوى (فوق تذييل الصفحة)"
+msgid "Under Main Widgets Area"
+msgstr "تحت العمود الرئيسي الحاجيات المنطقة"
+
+#: functions.php:x
+msgid "Under Content (up footer) Widgets Area"
+msgstr "تحت المحتوى (فوق تذييل الصفحة) الحاجيات المنطقة"
+
+#: functions.php:x
+msgid "Footer Widgets Area"
+msgstr "‌تذييل الصفحة الحاجيات المنطقة"
 
 #: functions.php:x
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
@@ -400,11 +411,15 @@ msgstr "نعرض المقالات في الصفحة الرئيسية"
 
 #: theme-options.php:x
 msgid "Display intro in other pages"
-msgstr "نمایش بخش معرفی در صفحات دیگر"
+msgstr "عرض مقدمة في الصفحات الأخرى"
 
 #: theme-options.php:x
 msgid "Display intro in mobile view"
 msgstr "عرض مقدمة في العرض الهاتفي"
+
+#: theme-options.php:x
+msgid "Logo image url to display adjacent top menu"
+msgstr "شعار صورة موقع لعرض القائمة العلوية المجاورة"
 
 #: theme-options.php:x
 msgid "Content"
@@ -490,7 +505,7 @@ msgstr "نص بدون الاستايل الافتراضي الحاجيات"
 
 #: style.css:x
 msgid "Dinky"
-msgstr "الدینکی (أنيق)"
+msgstr "دینکی (أنيق)"
 
 #: style.css:x
 msgid ""
@@ -501,12 +516,12 @@ msgid ""
 "with screen size so it displayed good in tablet and mobile yet. Technologies "
 "used: HTML5, CSS3, JavaScript, jQuery. The proposed plugins compatible with "
 "this theme: wp-jalali, wp-pagenavi. <a href=\"http://wordpress.org/support/"
-"topic/dinky-theme-version-14/\">Changes List</a> | <a href=\"http://en.misam."
-"ir/projects/dinky-theme/\" title=\"Read to better use of theme\">More Info</"
-"a> | <a href=\"http://wordpress.org/support/view/theme-reviews/dinky/\">Rate "
-"Theme</a> | <a href=\"http://wordpress.org/support/theme/dinky/\">Ask "
-"Questions</a> | <a href=\"http://github.com/misamplus/dinky-theme/\">Develop "
-"Theme</a>"
+"topic/dinky-theme-version-15/\">Changes List</a> | <a href=\"http://github."
+"com/misamplus/dinky-theme/wiki/\" title=\"Read to better use of theme\">More "
+"Info</a> | <a href=\"http://wordpress.org/support/view/theme-reviews/dinky/"
+"\">Rate Theme</a> | <a href=\"http://wordpress.org/support/theme/dinky/"
+"\">Ask Questions</a> | <a href=\"http://github.com/misamplus/dinky-theme/"
+"\">Develop Theme</a>"
 msgstr ""
 "مناسبة لبلوق الشخصية التي يمكن أن يكون لها بلوق وأيضا بطاقة زيارة في الصفحة "
 "الرئيسية. العديد من الرموز الاجتماعية لعرض روابط حسابك. دعم لغات الاتجاه "
@@ -515,12 +530,12 @@ msgstr ""
 "عرض جيد في قرص والمتنقلة حتى الآن. التقنيات المستخدمة: HTML5, CSS3, "
 "JavaScript, jQuery . والإضافات المقترحة متوافقة مع هذا القالب: wp-jalali, wp-"
 "pagenavi. <a href=\"http://wordpress.org/support/topic/dinky-theme-"
-"version-14/\">قائمة التغييرات</a> | <a href=\"http://misam.ir/projects/dinky-"
-"theme#header:arabic/\" title=\"قراءة لاستخدام أفضل لقالب\">المزيد من "
-"المعلومات</a> | <a href=\"http://wordpress.org/support/view/theme-reviews/"
-"dinky/\">معدل القالب</a> | <a href=\"http://wordpress.org/support/theme/"
-"dinky/\">طرح الأسئلة</a> | <a href=\"http://github.com/misamplus/dinky-theme/"
-"\">تطوير القالب</a>"
+"version-15/\">قائمة التغييرات</a> | <a href=\"http://github.com/misamplus/"
+"dinky-theme/wiki/\" title=\"قراءة لاستخدام أفضل لقالب\">المزيد من المعلومات</"
+"a> | <a href=\"http://wordpress.org/support/view/theme-reviews/dinky/\">معدل "
+"القالب</a> | <a href=\"http://wordpress.org/support/theme/dinky/\">طرح "
+"الأسئلة</a> | <a href=\"http://github.com/misamplus/dinky-theme/\">تطوير "
+"القالب</a>"
 
 #: style.css:x
 msgid "Misam Saki"

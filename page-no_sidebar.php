@@ -6,7 +6,6 @@ if ( !defined('ABSPATH')) exit;
  * The template for displaying pages with 'No Sidebar' template.
  * 
  * @package Dinky
- * @version 1.4
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
@@ -29,6 +28,7 @@ if ( !defined('ABSPATH')) exit;
 				<?php else : ?>
 					<?php get_template_part( 'content', 'none' ); ?>
 				<?php endif;?>
+				<?php get_sidebar('under_main'); ?>
 			</div>
 		</div>
 <?php get_footer(); ?>

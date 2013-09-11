@@ -4,7 +4,6 @@ if ( !defined('ABSPATH')) exit;
  * Dinky theme custom widgets
  *
  * @package Dinky
- * @version 1.4
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir

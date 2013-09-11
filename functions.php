@@ -4,7 +4,6 @@ if ( !defined('ABSPATH')) exit;
  * Dinky theme functions and definitions.
  *
  * @package Dinky
- * @version 1.4
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
@@ -36,6 +35,10 @@ function dinky_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	register_nav_menu( 'primary', __( 'Primary Menu', 'dinky' ) );
+	/**
+	 * @since Dinky 1.5
+	 */
+	register_nav_menu( 'top', __( 'Top Menu', 'dinky' ) );
 
 	add_theme_support( 'custom-background', array(
 		'default-color' => 'fff',
@@ -104,14 +107,14 @@ function dinky_scripts_styles() {
 	$query_args = array('family' => $fonts);
 	wp_enqueue_style( 'dinky-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 
-	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-08-29' );
+	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-09-07' );
 	wp_add_inline_style( 'dinky-style', dinky_get_custome_style() ); // Add custom style
-	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-08-29' );
+	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-09-07' );
 
-	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '2013-08-26' );
+	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '2013-09-07' );
 	$wp_styles->add_data( 'dinky-ie', 'conditional', 'lt IE' );
 
-	wp_enqueue_script( 'dinky-ready', get_template_directory_uri() . '/js/ready.js', array('jquery'), '2013-08-26' );
+	wp_enqueue_script( 'dinky-ready', get_template_directory_uri() . '/js/ready.js', array('jquery'), '2013-09-07' );
 
 }
 add_action( 'wp_enqueue_scripts', 'dinky_scripts_styles' );
@@ -194,7 +197,7 @@ add_filter( 'wp_page_menu_args', 'dinky_page_menu_args' );
 
 function dinky_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar column', 'dinky' ),
+		'name' => __( 'Sidebar Widgets Area', 'dinky' ),
 		'id' => 'sidebar',
 		'description' => __( '', 'dinky' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="entry-content">',
@@ -204,7 +207,7 @@ function dinky_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Up main column', 'dinky' ),
+		'name' => __( 'Up Main Widgets Area', 'dinky' ),
 		'id' => 'up_main',
 		'description' => __( '', 'dinky' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="entry-content">',
@@ -214,7 +217,17 @@ function dinky_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Under content (up footer)', 'dinky' ),
+		'name' => __( 'Under Main Widgets Area', 'dinky' ),
+		'id' => 'under_main',
+		'description' => __( '', 'dinky' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="entry-content">',
+		'after_widget' => '</div></aside>',
+		'before_title' => '<div class="entry-header"><span class="entry-title">',
+		'after_title' => '</span></div>'
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Under Content (up footer) Widgets Area', 'dinky' ),
 		'id' => 'under_content',
 		'description' => __( '', 'dinky' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="entry-content">',
@@ -223,6 +236,15 @@ function dinky_widgets_init() {
 		'after_title' => '</span></div>'
 	) );
 
+	register_sidebar( array(
+		'name' => __( 'Footer Widgets Area', 'dinky' ),
+		'id' => 'footer',
+		'description' => __( '', 'dinky' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s"><div class="entry-content">',
+		'after_widget' => '</div></aside>',
+		'before_title' => '<div class="entry-header"><span class="entry-title">',
+		'after_title' => '</span></div>'
+	) );
 }
 add_action( 'widgets_init', 'dinky_widgets_init' );
 

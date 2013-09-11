@@ -4,7 +4,6 @@ if ( !defined('ABSPATH')) exit;
  * The template for displaying the Footer.
  *
  * @package Dinky
- * @version 1.4
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
@@ -16,6 +15,7 @@ if ( !defined('ABSPATH')) exit;
 ?>
 		<?php get_sidebar('under_content'); ?>
 		<footer id="footer" role="contentinfo">
+			<?php get_sidebar('footer'); ?>
 			<div class="copyright">
 				<p><?php if (dinky_get_theme_option('copyright') != ''): echo dinky_get_theme_option('copyright'); else: ?><?php printf( __( '&copy; Copyright %s <a href="%s" title="%s">%s</a>', 'dinky' ), (function_exists('jdate') ? jdate('Y') : date('Y')), home_url('/'), get_bloginfo('name', 'display'), get_bloginfo('name') ); ?><?php endif; ?></p>
 				<?php 

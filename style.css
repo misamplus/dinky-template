@@ -1,8 +1,8 @@
 /**
  * Theme Name: Dinky
- * Version: 1.4
+ * Version: 1.5
  * Theme URI: http://wordpress.org/themes/dinky/
- * Description: Suitable for personal blogs that you can have blog and also visit card in home page. Several social icons to display your account links. Support RTL languages and ability to add different languages typography (English, Persian and Arabic by defualt). This theme is responsive; means that action with screen size so it displayed good in tablet and mobile yet. Technologies used: HTML5, CSS3, JavaScript, jQuery. The proposed plugins compatible with this theme: wp-jalali, wp-pagenavi. <a href="http://wordpress.org/support/topic/dinky-theme-version-14/">Changes List</a> | <a href="http://en.misam.ir/projects/dinky-theme/" title="Read to better use of theme">More Info</a> | <a href="http://wordpress.org/support/view/theme-reviews/dinky/">Rate Theme</a> | <a href="http://wordpress.org/support/theme/dinky/">Ask Questions</a> | <a href="http://github.com/misamplus/dinky-theme/">Develop Theme</a>
+ * Description: Suitable for personal blogs that you can have blog and also visit card in home page. Several social icons to display your account links. Support RTL languages and ability to add different languages typography (English, Persian and Arabic by defualt). This theme is responsive; means that action with screen size so it displayed good in tablet and mobile yet. Technologies used: HTML5, CSS3, JavaScript, jQuery. The proposed plugins compatible with this theme: wp-jalali, wp-pagenavi. <a href="http://wordpress.org/support/topic/dinky-theme-version-15/">Changes List</a> | <a href="http://github.com/misamplus/dinky-theme/wiki/" title="Read to better use of theme">More Info</a> | <a href="http://wordpress.org/support/view/theme-reviews/dinky/">Rate Theme</a> | <a href="http://wordpress.org/support/theme/dinky/">Ask Questions</a> | <a href="http://github.com/misamplus/dinky-theme/">Develop Theme</a>
  * Author: Misam Saki
  * Author URI: http://en.misam.ir/
  * License: GNU General Public License v3 or later
@@ -14,9 +14,9 @@
  * Twitter: @misamplus
 */
 
-@import "./css/style.css?ver=2013-08-29";
-@import "./css/post-formats.css?ver=2013-08-26";
-@import "./css/typography.css?ver=2013-08-26";
-@import "./css/social-icons.css?ver=2013-08-26";
-@import "./css/wordpress.css?ver=2013-08-26";
-@import "./css/language/default.css?ver=2013-08-26";
+@import "./css/style.css?ver=2013-09-07";
+@import "./css/post-formats.css?ver=2013-09-07";
+@import "./css/typography.css?ver=2013-09-07";
+@import "./css/social-icons.css?ver=2013-09-07";
+@import "./css/wordpress.css?ver=2013-09-07";
+@import "./css/language/default.css?ver=2013-09-07";

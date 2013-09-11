@@ -4,7 +4,6 @@ if ( !defined('ABSPATH')) exit;
  * Dinky theme Options
  *
  * @package Dinky
- * @version 1.4
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
@@ -15,8 +14,8 @@ if ( !defined('ABSPATH')) exit;
  */
 
 function dinky_admin_enqueue_scripts( $hook_suffix ) {
-	wp_enqueue_style( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.css', false, '2013-08-26' );
-	wp_enqueue_script( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.js', array( 'farbtastic' ), '2013-08-26' );
+	wp_enqueue_style( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.css', false, '2013-09-07' );
+	wp_enqueue_script( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.js', array( 'farbtastic' ), '2013-09-07' );
 	wp_enqueue_style( 'farbtastic' );
 }
 add_action( 'admin_print_styles-appearance_page_theme_options', 'dinky_admin_enqueue_scripts' );
@@ -53,6 +52,11 @@ function dinky_theme_options_init() {
 	// end since
 	add_settings_field( 'intro_display_other', __( 'Display intro in other pages',     'dinky' ), 'dinky_settings_field_intro_display_other', 'theme_options', 'general' );
 	add_settings_field( 'intro_display_mobile', __( 'Display intro in mobile view',     'dinky' ), 'dinky_settings_field_intro_display_mobile', 'theme_options', 'general' );
+	/**
+ 	 * @since Dinky 1.5
+ 	 */
+	add_settings_field( 'topmenu_logo', __( 'Logo image url to display adjacent top menu',     'dinky' ), 'dinky_settings_field_topmenu_logo', 'theme_options', 'general' );
+	// end since
 	add_settings_field( 'content_title', '<h3>'.__( 'Content',     'dinky' ).'<h3>', 'dinky_settings_field_title', 'theme_options', 'general' );
 	add_settings_field( 'intro_content', __( 'Intro content',     'dinky' ), 'dinky_settings_field_intro_content', 'theme_options', 'general' );
 	add_settings_field( 'copyright', __( 'Copyright content',     'dinky' ), 'dinky_settings_field_copyright', 'theme_options', 'general' );
@@ -232,6 +236,18 @@ function dinky_settings_field_intro_display_mobile() {
 	if ($data == '') $data = false;
 	?>
 	<input type="checkbox" <?php if ($data) echo "checked"; ?> name="dinky_theme_options[intro_display_mobile]" id="intro-display-mobile" value="1" />
+	<?php
+}
+
+/**
+ * @since Dinky 1.5
+ */
+function dinky_settings_field_topmenu_logo() {
+	$options = dinky_get_theme_options();
+	$data = '';
+	if (isset($options['topmenu_logo'])) $data = esc_attr( $options['topmenu_logo'] );
+	?>
+	<input type="text" name="dinky_theme_options[topmenu_logo]" id="topmenu-logo" value="<?php echo $data; ?>" />
 	<?php
 }
 

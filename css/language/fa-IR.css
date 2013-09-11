@@ -3,8 +3,7 @@
  * Package: Dinky
  * Since: Dinky 1.2 (in css/language.css at Dinky 1.0)
  * Theme URI: http://wordpress.org/themes/dinky/
- * Github repository URI: http://github.com/misamplus/dinky-theme/
- * More information: http://en.misam.ir/projects/dinky-theme/
+ * Github: http://github.com/misamplus/dinky-theme/
  * License: GNU General Public License v3 or later
  * Copyright (C) 2013  Misam Saki, misam.ir
  * Author: Misam Saki
@@ -97,7 +96,7 @@ body[lang=fa-IR] .widget .entry-title {
 body[lang=fa-IR] .widget .entry-content {
 	font-size: 12pt;
 }
-body[lang=fa-IR] #footer {
+body[lang=fa-IR] #footer .copyright {
 	font-size: 11pt;
 }
 body[lang=fa-IR] #footer .copyright-designer {

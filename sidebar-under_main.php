@@ -1,10 +1,10 @@
 <?php
 if ( !defined('ABSPATH')) exit;
 /**
- * The sidebar containing the Under Content Widgets Area.
+ * The sidebar containing the Under Main Widgets Area.
  *
  * @package Dinky
- * @since Dinky 1.0
+ * @since Dinky 1.5
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
  * @author Misam Saki
@@ -13,8 +13,8 @@ if ( !defined('ABSPATH')) exit;
  * @twitter: @misamplus
  */
 ?>
-		<?php if ( is_active_sidebar( 'under_content' ) ) : ?>
-		<div id="sidebar-under_content" class="sidebar container">
-				<?php dynamic_sidebar( 'under_content' ); ?>
-		</div>
-		<?php endif; ?>
+				<?php if ( is_active_sidebar( 'under_main' ) ) : ?>
+				<div id="sidebar-under_main" class="sidebar">
+						<?php dynamic_sidebar( 'under_main' ); ?>
+				</div>
+				<?php endif; ?>
