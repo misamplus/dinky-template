@@ -1,5 +1,4 @@
 <?php
-if ( !defined('ABSPATH')) exit;
 /**
  * The template for displaying pages with defualt template.
  *
@@ -7,11 +6,10 @@ if ( !defined('ABSPATH')) exit;
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
- * @author Misam Saki
- * @website http://en.misam.ir/
- * @email: misamplus@gmail.com
- * @twitter: @misamplus
+ * @author Misam Saki,  http://misam.ir/
  */
+
+if ( !defined('ABSPATH')) exit;
 ?>
 <?php get_header(); ?>
 		<div id="content" class="container" role="main">

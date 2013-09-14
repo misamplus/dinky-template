@@ -1,5 +1,4 @@
 <?php
-if ( !defined('ABSPATH')) exit;
 /**
  * Dinky theme functions and definitions.
  *
@@ -7,11 +6,10 @@ if ( !defined('ABSPATH')) exit;
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
- * @author Misam Saki
- * @website http://en.misam.ir/
- * @email: misamplus@gmail.com
- * @twitter: @misamplus
+ * @author Misam Saki,  http://misam.ir/
  */
+
+if ( !defined('ABSPATH')) exit;
 
 if ( !isset( $content_width ) ) $content_width = 600;
 
@@ -86,7 +84,7 @@ h1.title, h2.subtitle {
 
 function dinky_admin_header_image() { ?>
 	<div id="cover">
-		<img alt="cover" class="cover" src="<?php if (get_header_image() != '') echo get_header_image(); else echo get_template_directory_uri() . '/img/cover_beach.jpg'; ?>" />
+		<?php if (get_header_image() != ''): ?><img alt="cover" class="cover" src="<?php echo get_header_image(); ?>" /><?php endif; ?>
 		<?php if (1==1): ?>
 		<hgroup id="title">
 			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
@@ -107,14 +105,21 @@ function dinky_scripts_styles() {
 	$query_args = array('family' => $fonts);
 	wp_enqueue_style( 'dinky-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 
-	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-09-07' );
+	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-09-13' );
+
+	/**
+	 * @since Dinky 1.5.13
+	 */
+	wp_style_add_data( 'dinky-style', 'rtl', get_template_directory_uri() . '/css/rtl.css?ver=2013-09-13' );
+
 	wp_add_inline_style( 'dinky-style', dinky_get_custome_style() ); // Add custom style
-	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-09-07' );
+	
+	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-09-13' );
 
-	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '2013-09-07' );
-	$wp_styles->add_data( 'dinky-ie', 'conditional', 'lt IE' );
+	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '2013-09-13' );
+	$wp_styles->add_data( 'dinky-ie', 'conditional', 'lt IE 9' );
 
-	wp_enqueue_script( 'dinky-ready', get_template_directory_uri() . '/js/ready.js', array('jquery'), '2013-09-07' );
+	wp_enqueue_script( 'dinky-ready', get_template_directory_uri() . '/js/ready.js', array('jquery'), '2013-09-13' );
 
 }
 add_action( 'wp_enqueue_scripts', 'dinky_scripts_styles' );

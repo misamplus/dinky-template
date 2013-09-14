@@ -1,5 +1,4 @@
 <?php
-if ( !defined('ABSPATH')) exit;
 /**
  * The template for displaying the Header.
  *
@@ -7,11 +6,10 @@ if ( !defined('ABSPATH')) exit;
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
- * @author Misam Saki
- * @website http://en.misam.ir/
- * @email: misamplus@gmail.com
- * @twitter: @misamplus
+ * @author Misam Saki,  http://misam.ir/
  */
+
+if ( !defined('ABSPATH')) exit;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -22,7 +20,6 @@ if ( !defined('ABSPATH')) exit;
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>" />
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-		<link rel="canonical" href="<?php echo home_url('/'); ?>" />
 		<?php if (dinky_get_theme_option('tag_author') != ''): ?><link rel="author" href="<?php echo dinky_get_theme_option('tag_author'); ?>" /><?php endif; ?>
 		<?php if (dinky_get_theme_option('tag_shortlink') != ''): ?><link rel='shortlink' href='<?php echo dinky_get_theme_option('tag_shortlink'); ?>' /><?php endif; ?>
 		<?php if (dinky_get_theme_option('tag_favicon') != ''): ?><link rel="shortcut icon" type="image/x-icon" href='<?php echo dinky_get_theme_option('tag_favicon'); ?>' /><?php endif; ?>
@@ -32,24 +29,26 @@ if ( !defined('ABSPATH')) exit;
 		<header id="masthead"  role="banner">
 			<nav id="mobile-navigation" class="container" role="navigation">
 				<div id="mobile-title">
-					<h2 class="mobile-title"><?php bloginfo( 'name' ); ?></h2>
+					<span class="mobile-title"><?php bloginfo( 'name' ); ?></span>
 					<a class="mobile-select-menu"></a>
 				</div>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 			</nav>
 			<?php if ( ( is_home() & dinky_get_theme_option('cover_display_home') ) or ( !is_home() & dinky_get_theme_option('cover_display_other') ) ) : ?>
 			<div id="cover">
-				<img alt="cover" class="cover" src="<?php echo get_header_image(); ?>" />
+				<?php if (get_header_image() != ''): ?><img alt="cover" class="cover" src="<?php echo get_header_image(); ?>" /><?php endif; ?>
 				<div id="title">
 					<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
 					<h2 class="subtitle"><?php bloginfo( 'description' ); ?></h2>
 				</div>
 			</div>
 			<?php else: ?>
+			<?php if ( is_home() ): ?>
 			<div id="title" style="display: none;">
 				<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
 				<h2 class="subtitle"><?php bloginfo( 'description' ); ?></h2>
 			</div>
+			<?php endif; ?>
 			<?php endif; ?>
 			<?php if ((is_home() & dinky_get_theme_option('intro_display_home')) or (!is_home() & dinky_get_theme_option('intro_display_other'))): ?>
 			<div id="intro">

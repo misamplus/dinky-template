@@ -1,7 +1,7 @@
 Dinky Theme
 ==========
 
-Dinky WordPress Theme Version 1.5
+Dinky WordPress Theme Version 1.5.13
 
 Contents
 ==============================
@@ -16,16 +16,14 @@ Contents
 ==============================
 
 * Package: Dinky
-* Version: 1.5
+* Version: 1.5.13
 * Since: Dinky 1.0
 * Theme URI: http://wordpress.org/themes/dinky/
 * More information: http://github.com/misamplus/dinky-theme/wiki/
 * License: GNU General Public License v3 or later
 * Copyright (C) 2013  Misam Saki, misam.ir
 * Author: Misam Saki
-* Website: http://en.misam.ir/
-* Email: misamplus@gmail.com
-* Twitter: @misamplus
+* Author URI: http://misam.ir/
 
 2. Screenshots
 ==============================

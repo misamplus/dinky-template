@@ -1,16 +1,15 @@
 /**
  * Theme options script
+ *
  * Package: Dinky
  * Since: Dinky 1.0
+ * Llicense: GNU General Public License v3 or later
+ * Copyright (C) 2013  Misam Saki, misam.ir
+ * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
  * Github: http://github.com/misamplus/dinky-theme/
- * License: GNU General Public License v3 or later
- * Copyright (C) 2013  Misam Saki, misam.ir
- * Author: Misam Saki
- * Website: http://en.misam.ir/
- * Email: misamplus@gmail.com
- * Twitter: @misamplus
 */
+
 window.load = options_load();
 function options_load() {
 }

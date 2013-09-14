@@ -1,5 +1,4 @@
 <?php
-if ( !defined('ABSPATH')) exit;
 /**
  * Dinky theme Options
  *
@@ -7,15 +6,14 @@ if ( !defined('ABSPATH')) exit;
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
- * @author Misam Saki
- * @website http://en.misam.ir/
- * @email: misamplus@gmail.com
- * @twitter: @misamplus
+ * @author Misam Saki,  http://misam.ir/
  */
 
+if ( !defined('ABSPATH')) exit;
+
 function dinky_admin_enqueue_scripts( $hook_suffix ) {
-	wp_enqueue_style( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.css', false, '2013-09-07' );
-	wp_enqueue_script( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.js', array( 'farbtastic' ), '2013-09-07' );
+	wp_enqueue_style( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.css', false, '2013-09-13' );
+	wp_enqueue_script( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.js', array( 'farbtastic' ), '2013-09-13' );
 	wp_enqueue_style( 'farbtastic' );
 }
 add_action( 'admin_print_styles-appearance_page_theme_options', 'dinky_admin_enqueue_scripts' );
@@ -36,27 +34,34 @@ function dinky_theme_options_init() {
 	);
 
 	add_settings_field( 'view_title', '<h3>'.__( 'View',     'dinky' ).'<h3>', 'dinky_settings_field_title', 'theme_options', 'general' );
+	
 	/**
  	 * @since Dinky 1.1
  	 */
 	add_settings_field( 'cover_display_home', __( 'Display cover in home page',     'dinky' ), 'dinky_settings_field_cover_display_home', 'theme_options', 'general' );
 	add_settings_field( 'cover_display_other', __( 'Display cover in other pages',     'dinky' ), 'dinky_settings_field_cover_display_other', 'theme_options', 'general' );
 	add_settings_field( 'content_display_home', __( 'Display content and footer in home page',     'dinky' ), 'dinky_settings_field_content_display_home', 'theme_options', 'general' );	
-	// end since
+	
 	add_settings_field( 'sidebar_display', __( 'Display sidebar column',     'dinky' ), 'dinky_settings_field_sidebar_display', 'theme_options', 'general' );
 	add_settings_field( 'fullmain_nosidebar', '<span id="fullmain-nosidebar-title"' . ((dinky_get_theme_option('sidebar_display')) ? 'style="display: none"' : '') . ' >' .  __( 'Full size main column when dont display sidebar column',     'dinky' )  . '</span>', 'dinky_settings_field_fullmain_nosidebar', 'theme_options', 'general' );
+	
 	/**
  	 * @since Dinky 1.1
  	 */
 	add_settings_field( 'intro_display_home', __( 'Display intro in home page',     'dinky' ), 'dinky_settings_field_intro_display_home', 'theme_options', 'general' );
-	// end since
+	
 	add_settings_field( 'intro_display_other', __( 'Display intro in other pages',     'dinky' ), 'dinky_settings_field_intro_display_other', 'theme_options', 'general' );
 	add_settings_field( 'intro_display_mobile', __( 'Display intro in mobile view',     'dinky' ), 'dinky_settings_field_intro_display_mobile', 'theme_options', 'general' );
 	/**
  	 * @since Dinky 1.5
  	 */
 	add_settings_field( 'topmenu_logo', __( 'Logo image url to display adjacent top menu',     'dinky' ), 'dinky_settings_field_topmenu_logo', 'theme_options', 'general' );
-	// end since
+	
+	/**
+ 	 * @since Dinky 1.5.13
+ 	 */
+	add_settings_field( 'footer_dark', __( 'Dark background for Footer area',     'dinky' ), 'dinky_settings_field_footer_dark', 'theme_options', 'general' );
+	
 	add_settings_field( 'content_title', '<h3>'.__( 'Content',     'dinky' ).'<h3>', 'dinky_settings_field_title', 'theme_options', 'general' );
 	add_settings_field( 'intro_content', __( 'Intro content',     'dinky' ), 'dinky_settings_field_intro_content', 'theme_options', 'general' );
 	add_settings_field( 'copyright', __( 'Copyright content',     'dinky' ), 'dinky_settings_field_copyright', 'theme_options', 'general' );
@@ -66,11 +71,12 @@ function dinky_theme_options_init() {
 	add_settings_field( 'tags_title', '<h3>'.__( 'Header tags',     'dinky' ).'<h3>', 'dinky_settings_field_title', 'theme_options', 'general' );
 	add_settings_field( 'tag_author', __( 'Author link',     'dinky' ), 'dinky_settings_field_tag_author', 'theme_options', 'general' );
 	add_settings_field( 'tag_shortlink', __( 'Shortlink',     'dinky' ), 'dinky_settings_field_tag_shortlink', 'theme_options', 'general' );
+	
 	/**
  	 * @since Dinky 1.2.3
  	 */
 	add_settings_field( 'tag_favicon', __( 'Favicon link',     'dinky' ), 'dinky_settings_field_tag_favicon', 'theme_options', 'general' );
-	// end since
+	
 	add_settings_field( 'social_title', '<h3>'.__( 'Social icons',     'dinky' ).'<h3>', 'dinky_settings_field_title', 'theme_options', 'general' );
 	add_settings_field( 'social_mail', __( 'E-mail',     'dinky' ), 'dinky_settings_field_social_mail', 'theme_options', 'general' );
 	add_settings_field( 'social_feed', __( 'Feed',     'dinky' ), 'dinky_settings_field_social_feed', 'theme_options', 'general' );
@@ -248,6 +254,19 @@ function dinky_settings_field_topmenu_logo() {
 	if (isset($options['topmenu_logo'])) $data = esc_attr( $options['topmenu_logo'] );
 	?>
 	<input type="text" name="dinky_theme_options[topmenu_logo]" id="topmenu-logo" value="<?php echo $data; ?>" />
+	<?php
+}
+
+/**
+ * @since Dinky 1.5.13
+ */
+function dinky_settings_field_footer_dark() {
+	$options = dinky_get_theme_options();
+	$data = '';
+	if (isset($options['footer_dark'])) $data = esc_attr( $options['footer_dark'] );
+	if ($data == '') $data = false;
+	?>
+	<input type="checkbox" <?php if ($data) echo "checked"; ?> name="dinky_theme_options[footer_dark]" id="footer_dark" value="1" />
 	<?php
 }
 
@@ -497,7 +516,7 @@ function dinky_settings_field_social_stumbleupon() {
 
 function dinky_theme_options_render_page() {
 	?>
-	<div class="wrap">
+	<div class="wrap" id="dinky-options">
 		<?php screen_icon(); ?>
 		<?php $theme_name = wp_get_theme(); ?>
 		<h2><?php printf( __( '%s Theme Options', 'dinky' ), $theme_name ); ?></h2>
@@ -510,6 +529,8 @@ function dinky_theme_options_render_page() {
 				submit_button();
 			?>
 		</form>
+		<div id="dinky-ads">
+		</div>
 	</div>
 	<?php
 }

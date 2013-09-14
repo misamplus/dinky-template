@@ -1,15 +1,13 @@
 /**
  * Main Script
+ *
  * Package: Dinky
  * Since: Dinky 1.0
+ * Llicense: GNU General Public License v3 or later
+ * Copyright (C) 2013  Misam Saki, misam.ir
+ * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
  * Github: http://github.com/misamplus/dinky-theme/
- * License: GNU General Public License v3 or later
- * Copyright (C) 2013  Misam Saki, misam.ir
- * Author: Misam Saki
- * Website: http://en.misam.ir/
- * Email: misamplus@gmail.com
- * Twitter: @misamplus
 */
 
 $ = jQuery; // for adapt by jquery library from WordPress core bundled library resources
@@ -19,21 +17,24 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var window_scrollTop = $(window).scrollTop();
 		if (window_scrollTop > 0) $('#toTop').fadeIn('fast'); else $('#toTop').fadeOut('fast');
+
 		/**
-		 * @since Dinky 1.5
+		 * Since: Dinky 1.5
 		 */
-		var masthead_topOffset = $('#masthead').height() - window_scrollTop;
-		var mainNavigation_height = $('#main-navigation').height();
-		if (masthead_topOffset < mainNavigation_height + hf) {
-			$('.menu-primary').addClass('hidden');
-			$('.menu-top').removeClass('hidden');
-			$('#main-navigation').addClass('fixed');
-			hf = -20;
-		} else {
-			$('#main-navigation').removeClass('fixed');
-			$('.menu-top').addClass('hidden');
-			$('.menu-primary').removeClass('hidden');
-			hf = 30;
+		if ( $('.menu-top').html() != undefined ) {
+			var masthead_topOffset = $('#masthead').height() - window_scrollTop;
+			var mainNavigation_height = $('#main-navigation').height();
+			if (masthead_topOffset < mainNavigation_height + hf) {
+				$('.menu-primary').addClass('hidden');
+				$('.menu-top').removeClass('hidden');
+				$('#main-navigation').addClass('fixed');
+				hf = -20;
+			} else {
+				$('#main-navigation').removeClass('fixed');
+				$('.menu-top').addClass('hidden');
+				$('.menu-primary').removeClass('hidden');
+				hf = 30;
+			}
 		}
 	});
 	$(window).load(function() {

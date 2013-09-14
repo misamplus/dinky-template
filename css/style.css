@@ -1,15 +1,13 @@
 /**
  * Main style
+ *
  * Package: Dinky
  * Since: Dinky 1.0
+ * Llicense: GNU General Public License v3 or later
+ * Copyright (C) 2013  Misam Saki, misam.ir
+ * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
  * Github: http://github.com/misamplus/dinky-theme/
- * License: GNU General Public License v3 or later
- * Copyright (C) 2013  Misam Saki, misam.ir
- * Author: Misam Saki
- * Website: http://en.misam.ir/
- * Email: misamplus@gmail.com
- * Twitter: @misamplus
 */
 
 * {
@@ -597,6 +595,7 @@ img[class*="attachment-"] {
 }
 #sidebar-footer {
 	min-height: 250px;
+	margin: 10px auto 0;
 }
 #sidebar-up_main .widget,
 #sidebar-under_main .widget,
@@ -714,26 +713,45 @@ img[class*="attachment-"] {
 		width: 100%;
 	}
 }
-#sidebar-footer .widget .entry-title {
+#footer.dark #sidebar-footer .widget .entry-title,
+#footer.dark #sidebar-footer .widget .entry-title a {
 	color: #FFF;
 }
 #footer {
 	margin: 30px 0 0;
-	background: #222;
 	border-top: 1px solid #E6E6E6;
 	clear: both;
 	font-style: normal;
 }
+#footer.dark {
+	background: #222;
+	color: #C0C0C0;
+}
+#footer.dark .widget a {
+	color: #C0C0C0;
+}
+#footer.dark .widget a:hover {
+	color: #02ACF3;
+}
 #footer .copyright {
 	padding: 5px 0;
-	border-top: 1px solid #363636; /* E6E6E6 */
+	border-top: 1px solid #E6E6E6;
 	text-align: center;
+}
+#footer.dark .copyright {
+	border-top: 1px solid #363636;
 }
 #footer .copyright a {
 	color: #0085BD;
 }
 #footer .copyright a:hover {
 	color: #444;
+}
+#footer.dark .copyright a {
+	color: #02ACF3;
+}
+#footer.dark .copyright a:hover {
+	color: #C0C0C0;
 }
 #toTop {
 	display: none;

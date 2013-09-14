@@ -1,17 +1,24 @@
 /**
  * Theme options style
+ *
  * Package: Dinky
  * Since: Dinky 1.0
+ * Llicense: GNU General Public License v3 or later
+ * Copyright (C) 2013  Misam Saki, misam.ir
+ * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
  * Github: http://github.com/misamplus/dinky-theme/
- * License: GNU General Public License v3 or later
- * Copyright (C) 2013  Misam Saki, misam.ir
- * Author: Misam Saki
- * Website: http://en.misam.ir/
- * Email: misamplus@gmail.com
- * Twitter: @misamplus
 */
 
+#dinky-options form {
+	display: inline-table;
+	width: 700px;
+}
+#dinky-options #dinky-ads {
+	display: inline-table;
+	width: 300px;
+	text-align: center;
+}
 tr:hover {
 	background: #E6E6E6;
 }
@@ -22,8 +29,11 @@ input#topmenu-logo {
 	width: 300px;
 }
 textarea#intro_content {
-	width: 400px;
+	width: 300px;
 	height: 100px;
+}
+input#copyright {
+	width: 300px;
 }
 input[id*="tag-"] {
 	direction: ltr;
@@ -31,5 +41,5 @@ input[id*="tag-"] {
 }
 input[id*="social-"] {
 	direction: ltr;
-	width: 200px;
+	width: 300px;
 }

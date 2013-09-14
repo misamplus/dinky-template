@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Dinky package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-09-07 15:55+0330\n"
+"PO-Revision-Date: 2013-09-13 21:01+0330\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -105,11 +105,11 @@ msgstr "&copy; حق‌نشر %s <a href=\"%s\" title=\"%s\">%s</a>"
 
 #: footer.php:x
 msgid ""
-"<strong>Dinky</strong> WordPress Theme - Theme By <a href=\"http://en.misam."
-"ir/\" title=\"Misam Saki\">Misam Saki</a>"
+"<strong>Dinky</strong> WordPress Theme - Theme By <a href=\"http://misam.ir/"
+"\" title=\"Misam Saki\">Misam Saki</a>"
 msgstr ""
 "پوسته وردپرس <strong>دینکی (شیک)</strong> - پوسته از <a href=\"http://misam."
-"ir/\" title=\"میثم ساکی\">میثم ساکی</a>"
+"ir/fa/\" title=\"میثم ساکی\">میثم ساکی</a>"
 
 #: footer.php:x
 msgid "To Top"
@@ -424,6 +424,10 @@ msgid "Logo image url to display adjacent top menu"
 msgstr "آدرس تصویر لوگو برای نمایش در مجاورت فهرست بالا"
 
 #: theme-options.php:x
+msgid "Dark background for Footer area"
+msgstr "پس‌زمینه تاریک برای ناحیه پاورقی"
+
+#: theme-options.php:x
 msgid "Content"
 msgstr "محتوا"
 
@@ -518,7 +522,7 @@ msgid ""
 "with screen size so it displayed good in tablet and mobile yet. Technologies "
 "used: HTML5, CSS3, JavaScript, jQuery. The proposed plugins compatible with "
 "this theme: wp-jalali, wp-pagenavi. <a href=\"http://wordpress.org/support/"
-"topic/dinky-theme-version-15/\">Changes List</a> | <a href=\"http://github."
+"topic/dinky-theme-version-1513/\">Changes List</a> | <a href=\"http://github."
 "com/misamplus/dinky-theme/wiki/\" title=\"Read to better use of theme\">More "
 "Info</a> | <a href=\"http://wordpress.org/support/view/theme-reviews/dinky/"
 "\">Rate Theme</a> | <a href=\"http://wordpress.org/support/theme/dinky/"
@@ -532,17 +536,18 @@ msgstr ""
 "با توجه به سایز صفحه واکنش می‌دهد بنابراین در تبلت و موبایل نیز به خوبی نمایش "
 "داده می‌شود. تکنولوژی‌های استفاده شده: HTML5, CSS3, JavaScript, jQuery. "
 "پلاگین‌های پیشنهادی سازگار با این تم: wp-jalali, wp-pagenavi. <a href="
-"\"http://wordpress.org/support/topic/dinky-theme-version-15/\">لیست تغییرات</"
-"a> | <a href=\"http://github.com/misamplus/dinky-theme/wiki/\" title=\"برای "
-"استفاده بهتر از پوسته بخوانید\">اطلاعات بیشتر</a> | <a href=\"http://"
-"wordpress.org/support/view/theme-reviews/dinky/\">امتیاز دادن به پوسته</a> | "
-"<a href=\"http://wordpress.org/support/theme/dinky/\">پرسیدن سوالات</a> | <a "
-"href=\"http://github.com/misamplus/dinky-theme/\">توسعه پوسته</a>"
+"\"http://wordpress.org/support/topic/dinky-theme-version-1513/\">لیست "
+"تغییرات</a> | <a href=\"http://github.com/misamplus/dinky-theme/wiki/\" "
+"title=\"برای استفاده بهتر از پوسته بخوانید\">اطلاعات بیشتر</a> | <a href="
+"\"http://wordpress.org/support/view/theme-reviews/dinky/\">امتیاز دادن به "
+"پوسته</a> | <a href=\"http://wordpress.org/support/theme/dinky/\">پرسیدن "
+"سوالات</a> | <a href=\"http://github.com/misamplus/dinky-theme/\">توسعه "
+"پوسته</a>"
 
 #: style.css:x
 msgid "Misam Saki"
 msgstr "میثم ساکی"
 
 #: style.css:x
-msgid "http://en.misam.ir/"
-msgstr "http://misam.ir/"
+msgid "http://misam.ir/"
+msgstr "http://misam.ir/fa/"

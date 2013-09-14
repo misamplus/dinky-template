@@ -1,5 +1,4 @@
 <?php
-if ( !defined('ABSPATH')) exit;
 /**
  * The template used for displaying page content in page.php
  *
@@ -7,15 +6,14 @@ if ( !defined('ABSPATH')) exit;
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
- * @author Misam Saki
- * @website http://en.misam.ir/
- * @email: misamplus@gmail.com
- * @twitter: @misamplus
+ * @author Misam Saki,  http://misam.ir/
  */
+
+if ( !defined('ABSPATH')) exit;
 ?>
 					<article id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 						<header class="entry-header">
-							<h2 class="entry-title"><?php the_title(); ?></h2>
+							<h1 class="entry-title"><?php the_title(); ?></h1>
 						</header>
 						<?php dinky_post_thumbnail(); ?>
 						<div class="entry-content">

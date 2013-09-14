@@ -1,5 +1,4 @@
 <?php
-if ( !defined('ABSPATH')) exit;
 /**
  * Dinky theme custom widgets
  *
@@ -7,13 +6,11 @@ if ( !defined('ABSPATH')) exit;
  * @since Dinky 1.0
  * @license GNU General Public License v3 or later
  * @copyright (C) 2013  Misam Saki, misam.ir
- * @author Misam Saki
- * @website http://en.misam.ir/
- * @email: misamplus@gmail.com
- * @twitter: @misamplus
+ * @author Misam Saki,  http://misam.ir/
  */
-?>
-<?php
+
+if ( !defined('ABSPATH')) exit;
+
 add_action('widgets_init', 'dinky_Widget_Search');
 
 function dinky_Widget_Search() {
@@ -37,7 +34,7 @@ class dinky_Widget_Search extends WP_Widget {
 
 		// Use current theme search form if it exists
 		//get_search_form();
-		// Remove current theme search form and replace it by Dinky theme search form 
+		// Removed current theme search form and replaced it by Dinky theme search form 
 		?>
 		<form role="search" method="get" id="dinky-searchform" action="<?php echo home_url() ?>">
 			<input type="text" name="s" id="dinky-s" placeholder="<?php _e('Search...','dinky'); ?>" autocomplete="off">
