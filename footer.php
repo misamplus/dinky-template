@@ -15,7 +15,10 @@ if ( !defined('ABSPATH')) exit;
 		<footer id="footer" role="contentinfo" <?php if (dinky_get_theme_option('footer_dark')): ?>class="dark"<?php endif; ?>>
 			<?php get_sidebar('footer'); ?>
 			<div class="copyright">
-				<p><?php if (dinky_get_theme_option('copyright') != ''): echo dinky_get_theme_option('copyright'); else: ?><?php printf( __( '&copy; Copyright %s <a href="%s" title="%s">%s</a>', 'dinky' ), (function_exists('jdate') ? jdate('Y') : date('Y')), home_url('/'), get_bloginfo('name', 'display'), get_bloginfo('name') ); ?><?php endif; ?></p>
+				<div class="container" style="overflow: hidden;">
+					<p <?php if (has_nav_menu('footer')): ?>class="inside"<?php endif; ?>><?php if (dinky_get_theme_option('copyright') != ''): echo dinky_get_theme_option('copyright'); else: ?><?php printf( __( '<span lang="en-US">&copy;</span> Copyright %s <a href="%s" title="%s">%s</a>', 'dinky' ), (function_exists('jdate') ? jdate('Y') : date('Y')), home_url('/'), get_bloginfo('name', 'display'), get_bloginfo('name') ); ?><?php endif; ?></p>
+					<?php if (has_nav_menu('footer')): ?><div id="footer-navigation"><?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'nav-menu' ) ); ?></div><?php endif; ?>
+				</div>
 				<?php 
 				/**
  				 * You are free to remove the credit/designer link but I would very much appreciate your support by leaving it intact, thank you.

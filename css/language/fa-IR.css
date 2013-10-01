@@ -3,7 +3,7 @@
  *
  * Package: Dinky
  * Since: Dinky 1.2 (in css/language.css at Dinky 1.0)
- * Llicense: GNU General Public License v3 or later
+ * License: GNU General Public License v3 or later
  * Copyright (C) 2013  Misam Saki, misam.ir
  * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
@@ -77,10 +77,12 @@ body[lang=fa-IR] #main .navigation {
 }
 body[lang=fa-IR] .post .entry-title {
 	font-size: 18pt;
+	line-height: 1.618em;
 }
 body[lang=fa-IR] .post .entry-header .entry-shortmeta {
 	font-size: 12pt;
 }
+body[lang=fa-IR] .comment-body,
 body[lang=fa-IR] .post .entry-summary,
 body[lang=fa-IR] .post .entry-content {
 	font-size: 13pt;

@@ -3,7 +3,7 @@
  *
  * Package: Dinky
  * Since: Dinky 1.0
- * Llicense: GNU General Public License v3 or later
+ * License: GNU General Public License v3 or later
  * Copyright (C) 2013  Misam Saki, misam.ir
  * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
@@ -38,8 +38,9 @@ a.mobile-select-menu {
 }
 .post .entry-header .entry-shortmeta .comments-link {
 	display: inline-block;
-	background: url(../img/comm_rtl.png) center left no-repeat;
-	padding: 0 0 0 15px;
+	background: url(../img/comments.svg) center left no-repeat;
+	background-size: 16px;
+	padding: 0 0 0 16px;
 }
 #sidebar {
 	float: left;
@@ -59,8 +60,9 @@ a.mobile-select-menu {
 	right: auto;
 	left: 50px;
 }
-blockquote p:before {
-	background: url(../img/q_rtl.png) center center no-repeat;
+blockquote {
+	border-left: none;
+	border-right: 2px solid #00B3FF;
 }
 
 /**

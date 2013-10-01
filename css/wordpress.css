@@ -3,7 +3,7 @@
  *
  * Package: Dinky
  * Since: Dinky 1.0
- * Llicense: GNU General Public License v3 or later
+ * License: GNU General Public License v3 or later
  * Copyright (C) 2013  Misam Saki, misam.ir
  * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
@@ -104,6 +104,15 @@
 }
 .reply {
 	margin: 10px 0;
+}
+.comment-reply-link {
+	padding: 2px 5px;
+	background: #777;
+	color: #FFF !important;
+}
+.comment-reply-link:hover {
+	background: #C0C0C0;
+	border: none;
 }
 #commentform {
 	margin-top: 10px;

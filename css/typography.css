@@ -3,7 +3,7 @@
  *
  * Package: Dinky
  * Since: Dinky 1.0
- * Llicense: GNU General Public License v3 or later
+ * License: GNU General Public License v3 or later
  * Copyright (C) 2013  Misam Saki, misam.ir
  * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
@@ -59,15 +59,13 @@ h6 {
 	font-weight: bold;
 }
 blockquote {
-	margin: 10px;
-	padding: 10px;
+	margin: 10px 0 0;
+	padding: 5px 10px;
 	font-style: italic;
+	border-left: 2px solid #00B3FF;
 }
-blockquote p:before {
-	content: "#";
-	padding: 10px 8px 0;
-	color: transparent;
-	background: url(../img/q.png) center top no-repeat;
+blockquote p:first-child {
+	margin: 0 !important;
 }
 table {
 	border-bottom: 1px solid #EDEDED;
@@ -143,9 +141,10 @@ cite {
 	font-style: italic;
 }
 code, kbd, pre, samp, tt {
-	border-left: 2px solid #00B3FF;
+	border: 1px #E6E6E6 solid;
+	border-radius: 4px;
 	padding: 0 5px;
-	color: #777;
+	color: #555;
 }
 s, strike, del {
 	text-decoration: line-through;
@@ -186,10 +185,14 @@ dfn {
 }
 .wp-caption {
 	margin: 10px 0;
+	border: 1px #C0C0C0 solid;
+}
+.wp-caption img {
+	width: 100%;
 }
 .entry-caption,
 .wp-caption .wp-caption-text {
-	background: #E0E0E0;
+	margin: 0 !important;
 	text-align: center;
 }
 .wp-caption.aligncenter {

@@ -1,7 +1,7 @@
 Dinky Theme
 ==========
 
-Dinky WordPress Theme Version 1.5.13
+Dinky WordPress Theme Version 1.6
 
 Contents
 ==============================
@@ -16,7 +16,7 @@ Contents
 ==============================
 
 * Package: Dinky
-* Version: 1.5.13
+* Version: 1.6
 * Since: Dinky 1.0
 * Theme URI: http://wordpress.org/themes/dinky/
 * More information: http://github.com/misamplus/dinky-theme/wiki/
@@ -57,7 +57,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ==============================
 
 Images
-* All images are by me (Misam Saki) and they are released under the terms of the GNU General Public License v3 or later.
+* "post-format" directory
+ * aside.svg image file extracted from "FontAwsome" font (Font Squirrel, fontsquirrel.com, GNU v2 or later) and edited by me.
+  * It's released it under the terms of the GNU General Public License v3 or later.
+ * Other svg image files extracted form "GenerIcons" font (Dave Gandy, fortawesome.github.com/Font-Awesome, SIL Open Font) and edited by me.
+  * They are released under the terms of the GNU General Public License v3 or later.
+* search.svg, comments.svg and select-menu.svg images file extracted from "FontAwsome" font (like up) and edited by me.
+* Other images are by me (Misam Saki) and they are released under the terms of the GNU General Public License v3 or later.
 
 Fonts
 * BMitra-Regular - azfonts.net/load_font/bmitra.html/

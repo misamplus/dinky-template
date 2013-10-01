@@ -3,7 +3,7 @@
  *
  * Package: Dinky
  * Since: Dinky 1.4
- * Llicense: GNU General Public License v3 or later
+ * License: GNU General Public License v3 or later
  * Copyright (C) 2013  Misam Saki, misam.ir
  * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
@@ -68,6 +68,7 @@ body[lang=ar] .post .entry-title {
 body[lang=ar] .post .entry-header .entry-shortmeta {
 	font-size: 10pt;
 }
+body[lang=ar] .comment-body,
 body[lang=ar] .post .entry-summary,
 body[lang=ar] .post .entry-content {
 	font-size: 12pt;

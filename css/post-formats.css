@@ -3,13 +3,14 @@
  *
  * Package: Dinky
  * Since: Dinky 1.2
- * Llicense: GNU General Public License v3 or later
+ * License: GNU General Public License v3 or later
  * Copyright (C) 2013  Misam Saki, misam.ir
  * Author: Misam Saki, http://misam.ir/
  * Theme URI: http://wordpress.org/themes/dinky/
  * Github: http://github.com/misamplus/dinky-theme/
 */
 
+.post[class*="-attachment"] .entry-header .entry-title:before,
 .post.format-aside .entry-header .entry-title:before,
 .post.format-audio .entry-header .entry-title:before,
 .post.format-chat .entry-header .entry-title:before,
@@ -21,58 +22,70 @@
 .post.format-video .entry-header .entry-title:before,
 .post.sticky .entry-header .entry-title:before {
 	display: inline-block;
-	width: 25px;
-	height: 0;
+	width: 32px;
+	height: 32px;
 	content: "#";
 	font-size: 0;
+	margin: 0 7px 0;
 }
-.post.format-aside:before,
-.post.format-audio:before,
-.post.format-chat:before,
-.post.format-gallery:before,
-.post.format-image:before,
-.post.format-link:before,
-.post.format-quote:before,
-.post.format-status:before,
-.post.format-video:before,
-.post.sticky:before {
+.post[class*="-attachment"] .entry-header .entry-title,
+.post.image-attachment .entry-header .entry-title,
+.post.format-aside .entry-header .entry-title,
+.post.format-audio .entry-header .entry-title,
+.post.format-chat .entry-header .entry-title,
+.post.format-gallery .entry-header .entry-title,
+.post.format-image .entry-header .entry-title,
+.post.format-link .entry-header .entry-title,
+.post.format-quote .entry-header .entry-title,
+.post.format-status .entry-header .entry-title,
+.post.format-video .entry-header .entry-title,
+.post.sticky .entry-header .entry-title {
 	display: inline-block;
-	position: absolute;
-	margin: 0 -15px 0;
-	width: 56px;
-	height: 56px;
-	content: "#";
-	font-size: 0;
+	margin: 0 -5px 0;
 }
-.post.format-aside:before {
-	background: url('../img/post-format/aside.png') center center no-repeat;
+.post[class*="-attachment"] .entry-header .entry-title:before {
+	background: url('../img/post-format/attachment.svg') center center no-repeat;
+	background-size: 32px;
 }
-.post.format-audio:before {
-	background: url('../img/post-format/audio.png') center center no-repeat;
+.post.format-aside .entry-header .entry-title:before {
+	background: url('../img/post-format/aside.svg') center center no-repeat;
+	background-size: 26px;
 }
-.post.format-chat:before {
-	background: url('../img/post-format/chat.png') center center no-repeat;
+.post.format-audio .entry-header .entry-title:before {
+	background: url('../img/post-format/audio.svg') center center no-repeat;
+	background-size: 32px;
 }
-.post.format-gallery:before {
-	background: url('../img/post-format/gallery.png') center center no-repeat;
+.post.format-chat .entry-header .entry-title:before {
+	background: url('../img/post-format/chat.svg') center center no-repeat;
+	background-size: 32px;
 }
-.post.format-image:before {
-	background: url('../img/post-format/image.png') center center no-repeat;
+.post.format-gallery .entry-header .entry-title:before {
+	background: url('../img/post-format/gallery.svg') center center no-repeat;
+	background-size: 32px;
 }
-.post.format-link:before {
-	background: url('../img/post-format/link.png') center center no-repeat;
+.post.format-image .entry-header .entry-title:before {
+	background: url('../img/post-format/image.svg') center center no-repeat;
+	background-size: 32px;
 }
-.post.format-quote:before {
-	background: url('../img/post-format/quote.png') center center no-repeat;
+.post.format-link .entry-header .entry-title:before {
+	background: url('../img/post-format/link.svg') center center no-repeat;
+	background-size: 32px;
 }
-.post.format-status:before {
-	background: url('../img/post-format/status.png') center center no-repeat;
+.post.format-quote .entry-header .entry-title:before {
+	background: url('../img/post-format/quote.svg') center center no-repeat;
+	background-size: 32px;
 }
-.post.format-video:before {
-	background: url('../img/post-format/video.png') center center no-repeat;
+.post.format-status .entry-header .entry-title:before {
+	background: url('../img/post-format/status.svg') center center no-repeat;
+	background-size: 32px;
 }
-.post.sticky:before {
-	background: url('../img/post-format/sticky.png') center center no-repeat;
+.post.format-video .entry-header .entry-title:before {
+	background: url('../img/post-format/video.svg') center center no-repeat;
+	background-size: 32px;
+}
+.post.sticky .entry-header .entry-title:before {
+	background: url('../img/post-format/sticky.svg') center center no-repeat;
+	background-size: 32px;
 }
 
 /**

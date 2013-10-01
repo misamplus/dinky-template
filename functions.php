@@ -37,6 +37,10 @@ function dinky_setup() {
 	 * @since Dinky 1.5
 	 */
 	register_nav_menu( 'top', __( 'Top Menu', 'dinky' ) );
+	/**
+	 * @since Dinky 1.6
+	 */
+	register_nav_menu( 'footer', __( 'Footer Menu', 'dinky' ) );
 
 	add_theme_support( 'custom-background', array(
 		'default-color' => 'fff',
@@ -105,35 +109,29 @@ function dinky_scripts_styles() {
 	$query_args = array('family' => $fonts);
 	wp_enqueue_style( 'dinky-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 
-	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-09-13' );
+	wp_enqueue_style( 'dinky-style', get_stylesheet_uri(), array(), '2013-09-27' );
 
 	/**
 	 * @since Dinky 1.5.13
 	 */
-	wp_style_add_data( 'dinky-style', 'rtl', get_template_directory_uri() . '/css/rtl.css?ver=2013-09-13' );
+	wp_style_add_data( 'dinky-style', 'rtl', get_template_directory_uri() . '/css/rtl.css?ver=2013-09-27' );
 
 	wp_add_inline_style( 'dinky-style', dinky_get_custome_style() ); // Add custom style
 	
-	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-09-13' );
+	if (get_bloginfo('language') != 'en-US') wp_enqueue_style( 'dinky-style-lanugage-' . get_bloginfo('language'), get_template_directory_uri() . '/css/language/' . get_bloginfo('language') . '.css', array(), '2013-09-27' );
 
-	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '2013-09-13' );
+	wp_enqueue_style( 'dinky-ie', get_template_directory_uri() . '/css/ie.css', array( 'dinky-style' ), '2013-09-27' );
 	$wp_styles->add_data( 'dinky-ie', 'conditional', 'lt IE 9' );
 
-	wp_enqueue_script( 'dinky-ready', get_template_directory_uri() . '/js/ready.js', array('jquery'), '2013-09-13' );
+	wp_enqueue_script( 'dinky-ready', get_template_directory_uri() . '/js/ready.js', array('jquery'), '2013-09-27' );
 
 }
 add_action( 'wp_enqueue_scripts', 'dinky_scripts_styles' );
 
 function dinky_get_custome_style() {
 	$custom_style = "";
-	if (dinky_get_theme_option('version_display')): $custom_style .=
-	"#title .title:after {
-		display: inline-block;
-		content: \"" . __('Version', 'dinky') . " " . dinky_get_theme_option('version_number') . "\";
-	}";
-	endif;
 	if (get_header_textcolor() == 'blank'): $custom_style .=
-	"hgroup#title {
+	"#title {
 		display: none;
 	}";
 	endif;
@@ -289,13 +287,11 @@ function dinky_post_nav() { ?>
 
 function dinky_post_thumbnail() { ?>
 	<?php if ( !is_single() && has_post_thumbnail() ) : ?>
-		<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dinky' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark">
-			<div class="entry-image">
-				<div class="container">
-					<?php the_post_thumbnail(); ?>
-				</div>
+		<div class="entry-image">
+			<div class="container">
+				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'dinky' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_post_thumbnail(); ?></a>
 			</div>
-		</a>
+		</div>
 	<?php endif; ?>
 <?php }
 

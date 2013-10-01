@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Dinky package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2013-09-13 21:00+0330\n"
+"PO-Revision-Date: 2013-09-25 16:02+0330\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -102,8 +102,12 @@ msgid "Stumbleupon"
 msgstr "Stumbleupon"
 
 #: footer.php:x
-msgid "&copy; Copyright %s <a href=\"%s\" title=\"%s\">%s</a>"
-msgstr "&copy; حق النشر %s <a href=\"%s\" title=\"%s\">%s</a>"
+msgid ""
+"<span lang=\"en-US\">&copy;</span> Copyright %s <a href=\"%s\" title=\"%s\">"
+"%s</a>"
+msgstr ""
+"<span lang=\"en-US\">&copy;</span> حق النشر %s <a href=\"%s\" title=\"%s\">"
+"%s</a>"
 
 #: footer.php:x
 msgid ""
@@ -270,19 +274,19 @@ msgstr "التعليقات مغلقة."
 
 #: functions.php:x
 msgid "Primary Menu"
-msgstr "القائمة الأولية"
+msgstr "القائمة أولية"
 
 #: functions.php:x
 msgid "Top Menu"
-msgstr "القائمة العلوية"
+msgstr "القائمة علوية"
+
+#: functions.php:x
+msgid "Footer Menu"
+msgstr "القائمة تذییل"
 
 #: functions.php:x
 msgid "Beach"
 msgstr "شاطئ"
-
-#: functions.php:x
-msgid "Version"
-msgstr "إصدار"
 
 #: functions.php:x
 msgid "Page %s"
@@ -309,12 +313,12 @@ msgid "Footer Widgets Area"
 msgstr "‌تذييل الصفحة الحاجيات المنطقة"
 
 #: functions.php:x
-msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr "<span class=\"meta-nav\">&rarr;</span> أقدم المشاركات"
+msgid "<span class=\"previous\">&larr;</span> Older posts"
+msgstr "<span class=\"previous\">&rarr;</span> أقدم المشاركات"
 
 #: functions.php:x
-msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
-msgstr "أحدث المشاركات <span class=\"meta-nav\">&larr;</span>"
+msgid "Newer posts <span class=\"next\">&rarr;</span>"
+msgstr "أحدث المشاركات <span class=\"next\">&larr;</span>"
 
 #: functions.php:x
 msgid "« Previous"
@@ -438,14 +442,6 @@ msgid "Copyright content"
 msgstr "محتوى حق النشر"
 
 #: theme-options.php:x
-msgid "Version number"
-msgstr "رقم الإصدار"
-
-#: theme-options.php:x
-msgid "Display version number"
-msgstr "عرض رقم الإصدار"
-
-#: theme-options.php:x
 msgid "Header tags"
 msgstr "هدر وسوات"
 
@@ -520,7 +516,7 @@ msgid ""
 "with screen size so it displayed good in tablet and mobile yet. Technologies "
 "used: HTML5, CSS3, JavaScript, jQuery. The proposed plugins compatible with "
 "this theme: wp-jalali, wp-pagenavi. <a href=\"http://wordpress.org/support/"
-"topic/dinky-theme-version-1513/\">Changes List</a> | <a href=\"http://github."
+"topic/dinky-theme-version-16/\">Changes List</a> | <a href=\"http://github."
 "com/misamplus/dinky-theme/wiki/\" title=\"Read to better use of theme\">More "
 "Info</a> | <a href=\"http://wordpress.org/support/view/theme-reviews/dinky/"
 "\">Rate Theme</a> | <a href=\"http://wordpress.org/support/theme/dinky/"
@@ -534,7 +530,7 @@ msgstr ""
 "عرض جيد في قرص والمتنقلة حتى الآن. التقنيات المستخدمة: HTML5, CSS3, "
 "JavaScript, jQuery . والإضافات المقترحة متوافقة مع هذا القالب: wp-jalali, wp-"
 "pagenavi. <a href=\"http://wordpress.org/support/topic/dinky-theme-"
-"version-1513/\">قائمة التغييرات</a> | <a href=\"http://github.com/misamplus/"
+"version-16/\">قائمة التغييرات</a> | <a href=\"http://github.com/misamplus/"
 "dinky-theme/wiki/\" title=\"قراءة لاستخدام أفضل لقالب\">المزيد من المعلومات</"
 "a> | <a href=\"http://wordpress.org/support/view/theme-reviews/dinky/\">معدل "
 "القالب</a> | <a href=\"http://wordpress.org/support/theme/dinky/\">طرح "
