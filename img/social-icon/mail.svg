@@ -1,7 +1,0 @@
-<?xml-stylesheet type="text/css" href="style.css" ?>
-<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="256" height="256" id="svg7490" version="1.1" inkscape:version="0.48.3.1 r9886" viewBox="0 0 512 512">
-  <g transform="matrix(1 0 0 -1 0 480)">
-   <path class="social-icon" fill="currentColor" d="M302 221q18 17 20 19q21 21 49 56q4 5 3.5 8.5t-3.5 3.5h-4q-1 -1 -54 -50l-57 -51q-55 49 -57 51l-54 50q-2 0 -4.5 -0.5t-3.5 -3t4 -8.5q28 -35 49 -56q2 -2 20 -19q-77 -66 -78 -71q0 -3 5 -8.5t8 -5.5q4 0 72 78l39 -39l39 39q68 -78 72 -78q3 0 8 5.5t5 8.5
-q-1 5 -78 71zM256 480q-106 0 -181 -75t-75 -181t75 -181t181 -75t181 75t75 181t-75 181t-181 75zM406 133q0 -8 -5.5 -13.5t-14.5 -5.5h-260q-9 0 -14.5 5.5t-5.5 13.5v183q0 8 5.5 13.5t14.5 5.5h260q9 0 14.5 -5.5t5.5 -13.5v-183z" />
-  </g>
-</svg>
