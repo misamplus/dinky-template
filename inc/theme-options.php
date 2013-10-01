@@ -12,8 +12,8 @@
 if ( !defined('ABSPATH')) exit;
 
 function dinky_admin_enqueue_scripts( $hook_suffix ) {
-	wp_enqueue_style( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.css', false, '2013-09-13' );
-	wp_enqueue_script( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.js', array( 'farbtastic' ), '2013-09-13' );
+	wp_enqueue_style( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.css', false, '2013-09-27' );
+	wp_enqueue_script( 'dinky-theme-options', get_template_directory_uri() . '/inc/theme-options.js', array( 'farbtastic' ), '2013-09-27' );
 	wp_enqueue_style( 'farbtastic' );
 }
 add_action( 'admin_print_styles-appearance_page_theme_options', 'dinky_admin_enqueue_scripts' );
@@ -65,9 +65,6 @@ function dinky_theme_options_init() {
 	add_settings_field( 'content_title', '<h3>'.__( 'Content',     'dinky' ).'<h3>', 'dinky_settings_field_title', 'theme_options', 'general' );
 	add_settings_field( 'intro_content', __( 'Intro content',     'dinky' ), 'dinky_settings_field_intro_content', 'theme_options', 'general' );
 	add_settings_field( 'copyright', __( 'Copyright content',     'dinky' ), 'dinky_settings_field_copyright', 'theme_options', 'general' );
-	add_settings_field( 'version_title', '<h3>'.__( 'Version',     'dinky' ).'<h3>', 'dinky_settings_field_title', 'theme_options', 'general' );
-	add_settings_field( 'version_number', __( 'Version number',     'dinky' ), 'dinky_settings_field_version_number', 'theme_options', 'general' );
-	add_settings_field( 'version_display', __( 'Display version number',     'dinky' ), 'dinky_settings_field_version_display', 'theme_options', 'general' );
 	add_settings_field( 'tags_title', '<h3>'.__( 'Header tags',     'dinky' ).'<h3>', 'dinky_settings_field_title', 'theme_options', 'general' );
 	add_settings_field( 'tag_author', __( 'Author link',     'dinky' ), 'dinky_settings_field_tag_author', 'theme_options', 'general' );
 	add_settings_field( 'tag_shortlink', __( 'Shortlink',     'dinky' ), 'dinky_settings_field_tag_shortlink', 'theme_options', 'general' );
@@ -285,25 +282,6 @@ function dinky_settings_field_copyright() {
 	if (isset($options['copyright'])) $data = esc_attr( $options['copyright'] );
 	?>
 	<input type="text" name="dinky_theme_options[copyright]" id="copyright" value="<?php echo $data; ?>" />
-	<?php
-}
-
-function dinky_settings_field_version_number() {
-	$options = dinky_get_theme_options();
-	$data = '';
-	if (isset($options['version_number'])) $data = esc_attr( $options['version_number'] );
-	?>
-	<input type="text" name="dinky_theme_options[version_number]" id="version-number" value="<?php echo $data; ?>" />
-	<?php
-}
-
-function dinky_settings_field_version_display() {
-	$options = dinky_get_theme_options();
-	$data = '';
-	if (isset($options['version_display'])) $data = esc_attr( $options['version_display'] );
-	if ($data == '') $data = false;
-	?>
-	<input type="checkbox" <?php if ($data) echo "checked"; ?> name="dinky_theme_options[version_display]" id="version-display" value="1" />
 	<?php
 }
 
